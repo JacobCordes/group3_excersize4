@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import JacobButton from '../comps/Button';
 import KodiButton from '../comps/kodibutton';
+import BonnieButton from '../comps/BonnieButton';
 
 const HomeCont = styled.div`
   .header {
@@ -25,15 +26,10 @@ const HomeCont = styled.div`
 
   }
 `;
-
-export default function Home() {
-    return <HomeCont>
-    <JacobButton text="Jacob's Button" bgcolor="#FAD"/>
-           </HomeCont>
-}
-
 export default function Home() {
   return <HomeCont>
-  <KodiButton text="Kodi's Button" bgcolor="#856DBC"/>
+  <JacobButton text="Jacob's Button" bgcolor="#FAD"/>
+  <KodiButton text="Kodi's Button" bgcolor="#856DBC" />
+  <BonnieButton text="Bonnie's Button"/>
          </HomeCont>
 }
