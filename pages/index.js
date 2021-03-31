@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import JacobButton from '../comps/Button';
 import KodiButton from '../comps/kodibutton';
 import BonnieButton from '../comps/BonnieButton';
+import TylerButton from '../comps/TylerButton';
 
 const HomeCont = styled.div`
   .header {
@@ -31,5 +32,6 @@ export default function Home() {
   <JacobButton text="Jacob's Button" bgcolor="#FAD"/>
   <KodiButton text="Kodi's Button" bgcolor="#856DBC" />
   <BonnieButton text="Bonnie's Button"/>
+  <TylerButton/>
          </HomeCont>
 }
