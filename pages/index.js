@@ -6,7 +6,11 @@ import TylerButton from '../comps/TylerButton';
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/Discussion'
+import TrashInputs from '../comps/TrashLogComponents/Discussion';
+import Points from '../comps/RewardsComps/PointsComp';
+import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
+import RewardsSubhead from '../comps/RewardsComps/Subheading';
+import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -50,5 +54,9 @@ export default function Home() {
   <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
 <RedButton/>
 <GreenButton/>
+<RewardsHeading/>
+<RewardsSubhead/>
+<Points/>
+<SquareImages/>
          </HomeCont>
 }
