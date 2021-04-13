@@ -15,23 +15,71 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 
 
 const HomeCont = styled.div`
-  .header {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:10px;
-  }
 
-  .bottom {
-    display:flex;
+html, body{
+  margin:0px;
+  padding:0px;
+}
 
-    .left {
-      display:flex;
-      flex-direction:column;
-      padding:10px;
-    }
+.top{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:125px;
+  text-align:center;
+  font-family:Martel Sans;
+  color:white;
+}
 
-    .right {
+
+.top > div{
+  background:white;
+  padding:1em;
+}
+
+.top > div:nth-child(odd){
+  background:#A88C7D;
+}
+
+.left{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:600px;
+  text-align:center;
+  font-family:Martel Sans;
+  color:white;
+  justify-content:center;
+}
+
+
+.left > div{
+  background:white;
+  padding:1em;
+}
+
+.left > div:nth-child(odd){
+  background:#54738E;
+}
+
+.mid{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:1000px;
+  text-align:center;
+  font-family:Martel Sans;
+  color:white;
+}
+
+
+.mid > div{
+  background:white;
+  padding:1em;
+}
+
+.mid > div:nth-child(odd){
+  background:#9DBA94;
+}
+
+    .bot {
       padding:10px;
     }
 
@@ -40,13 +88,22 @@ const HomeCont = styled.div`
 
 export default function Home() {
   return <HomeCont>
-  <JacobButton text="Jacob's Button" bgcolor="#FAD"/>
-  <KodiButton text="Kodi's Button" bgcolor="#856DBC" />
-  <BonnieButton text="Bonnie's Button"/>
-  <TylerButton/>
+  
+
+    <div className="top"><div>
+      <h1>Trash Log</h1>
+      </div></div>
+
+    <div className="left"><div>
+      <h1>Your Statistics</h1>
   <DailyTrash/>
   <DailyTrash text="Weekly Trash Collected: 27"/>
   <DailyTrash text="Weekly Trash Goal: 40"/>
+      </div></div>
+
+    <div className="mid"><div>
+  <h1>Discussion is Key</h1>
+
   <TrashInputs />
   <TrashInputs />
   <TrashInputs />
@@ -54,9 +111,22 @@ export default function Home() {
   <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
 <RedButton/>
 <GreenButton/>
-<RewardsHeading/>
-<RewardsSubhead/>
-<Points/>
-<SquareImages/>
+      </div></div>
+
+
+    <div className="bot"></div>
+
+
+  {/* <JacobButton text="Jacob's Button" bgcolor="#FAD"/>
+  <KodiButton text="Kodi's Button" bgcolor="#856DBC" />
+  <BonnieButton text="Bonnie's Button"/>
+  <TylerButton/> */}
+  <RedButton text="Nope."/>
+  <GreenButton text="Yeah!"/>
+  <GreenButton text="What did we do?"/>
+  <RewardsHeading/>
+  <RewardsSubhead/>
+  <Points/>
+< SquareImages/>
          </HomeCont>
 }

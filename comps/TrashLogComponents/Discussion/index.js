@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 
 const DivCont = styled.div `
-display;flex;
+display:flex;
 margin:5px;
 background-color:#7297A0;
 max-width:300px;
