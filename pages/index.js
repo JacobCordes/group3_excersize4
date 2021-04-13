@@ -6,7 +6,10 @@ import TylerButton from '../comps/TylerButton';
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/Discussion'
+import TrashInputs from '../comps/TrashLogComponents/Discussion';
+import NavBar from '../comps/NavBar/index'
+
+
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -40,6 +43,7 @@ export default function Home() {
   <KodiButton text="Kodi's Button" bgcolor="#856DBC" />
   <BonnieButton text="Bonnie's Button"/>
   <TylerButton/>
+  <NavBar />
   <DailyTrash/>
   <DailyTrash text="Weekly Trash Collected: 27"/>
   <DailyTrash text="Weekly Trash Goal: 40"/>
@@ -47,8 +51,18 @@ export default function Home() {
   <TrashInputs />
   <TrashInputs />
   <TrashInputs />
+  
+  
+  
   <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
 <RedButton/>
 <GreenButton/>
+<br></br> <br></br> <br></br>
+<GreenButton text="What did we do?"/>
+<br></br> <br></br> <br></br>
+<RedButton text="Nope." />
+<GreenButton text="Yeah!"/>
+
+
          </HomeCont>
 }
