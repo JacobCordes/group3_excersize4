@@ -11,6 +11,9 @@ import Points from '../comps/RewardsComps/PointsComp';
 import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
+import Clock from '../comps/TylersComps/Clock';
+import InfoButton from '../comps/TylersComps/Button'
+import Widget from '../comps/TylersComps/Widget'
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -70,6 +73,9 @@ export default function Home() {
   <RedButton text="Nope."/>
   <GreenButton text="Yeah!"/>
   <GreenButton text="What did we do?"/>
+  <Clock></Clock>
+  <InfoButton></InfoButton>
+  <Widget></Widget>
   <RewardsHeading/>
   <RewardsSubhead/>
   <Points/>
