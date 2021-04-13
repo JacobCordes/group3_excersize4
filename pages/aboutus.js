@@ -14,7 +14,7 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
-const HomeCont = styled.div`
+const AboutUsCont = styled.div`
 
 html, body{
   margin:0px;
@@ -24,7 +24,7 @@ html, body{
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1500px;
+  grid-auto-rows:125px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -37,44 +37,85 @@ html, body{
 }
 
 .top > div:nth-child(odd){
-  background:#7297A0;
+  background:#A88C7D;
+}
+
+.left{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:600px;
+  text-align:center;
+  font-family:Martel Sans;
+  color:white;
+  justify-content:center;
 }
 
 
+.left > div{
+  background:white;
+  padding:1em;
+}
+
+.left > div:nth-child(odd){
+  background:#54738E;
+}
+
+.mid{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:400px;
+  text-align:center;
+  font-family:Martel Sans;
+  color:white;
+}
+
+
+.mid > div{
+  background:white;
+  padding:1em;
+}
+
+.mid > div:nth-child(odd){
+  background:#9DBA94;
+}
+
+    .bot {
+      padding:10px;
+    }
+
+  }
 `;
 
-export default function Home() {
-  return <HomeCont>
+export default function AboutUs() {
+  return <AboutUsCont>
   
 
     <div className="top"><div>
-      <h1>Main Logo goes here</h1>
+      <h1>About Us</h1>
+      </div></div>
+
+    <div className="left"><div>
+    <h1>Insert Logo Here</h1>
+
+      </div></div>
+
+    <div className="mid"><div>
+  <h2>My Waste is a web app project<br></br>
+created by Jacob Cordes,<br></br>Kodi de Castro, Tyler Do,<br></br>and Bonnie Dam for the Digital<br></br> Design and Development program at BCIT<br></br>
+
+
+<br></br>
+This web app was 
+created to promote 
+awareness towards 
+littering and 
+climate change.
+</h2>
       </div></div>
 
 
-  <DailyTrash/>
-  <DailyTrash text="Weekly Trash Collected: 27"/>
-  <DailyTrash text="Weekly Trash Goal: 40"/>
-  <TrashInputs />
-  <TrashInputs />
-  <TrashInputs />
-  <TrashInputs />
-  <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
-<RedButton/>
-<GreenButton/>
-
-
-
-
-
-  <RedButton text="Nope."/>
-  <GreenButton text="Yeah!"/>
-  <GreenButton text="What did we do?"/>
-  <RewardsHeading/>
-  <RewardsSubhead/>
-  <Points/>
-< SquareImages/>
-         </HomeCont>
+    
+         </AboutUsCont>
 }
 {
   

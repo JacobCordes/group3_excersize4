@@ -24,7 +24,7 @@ html, body{
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1500px;
+  grid-auto-rows:125px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -37,10 +37,53 @@ html, body{
 }
 
 .top > div:nth-child(odd){
-  background:#7297A0;
+  background:#A88C7D;
+}
+
+.left{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:600px;
+  text-align:center;
+  font-family:Martel Sans;
+  color:white;
+  justify-content:center;
 }
 
 
+.left > div{
+  background:white;
+  padding:1em;
+}
+
+.left > div:nth-child(odd){
+  background:#54738E;
+}
+
+.mid{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:1000px;
+  text-align:center;
+  font-family:Martel Sans;
+  color:white;
+}
+
+
+.mid > div{
+  background:white;
+  padding:1em;
+}
+
+.mid > div:nth-child(odd){
+  background:#9DBA94;
+}
+
+    .bot {
+      padding:10px;
+    }
+
+  }
 `;
 
 export default function Home() {
@@ -48,13 +91,19 @@ export default function Home() {
   
 
     <div className="top"><div>
-      <h1>Main Logo goes here</h1>
+      <h1>Trash Log</h1>
       </div></div>
 
-
+    <div className="left"><div>
+      <h1>Your Statistics</h1>
   <DailyTrash/>
   <DailyTrash text="Weekly Trash Collected: 27"/>
   <DailyTrash text="Weekly Trash Goal: 40"/>
+      </div></div>
+
+    <div className="mid"><div>
+  <h1>Discussion is Key</h1>
+
   <TrashInputs />
   <TrashInputs />
   <TrashInputs />
@@ -62,18 +111,7 @@ export default function Home() {
   <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
 <RedButton/>
 <GreenButton/>
-
-
-
-
-
-  <RedButton text="Nope."/>
-  <GreenButton text="Yeah!"/>
-  <GreenButton text="What did we do?"/>
-  <RewardsHeading/>
-  <RewardsSubhead/>
-  <Points/>
-< SquareImages/>
+      </div></div>
          </HomeCont>
 }
 {
