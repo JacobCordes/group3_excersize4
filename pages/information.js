@@ -11,6 +11,9 @@ import Points from '../comps/RewardsComps/PointsComp';
 import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
+import Clock from '../comps/TylersComps/Clock';
+import InfoButton from '../comps/TylersComps/Button'
+import Widget from '../comps/TylersComps/Widget'
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -101,6 +104,9 @@ export default function Information() {
 
     <div className="mid"><div>
   <h1>Discussion is Key</h1>
+<InfoButton text="Pro-Recycling Tips" />
+<InfoButton text="The Best Compost Tips"/>
+<InfoButton text="Minding Your Eco-Footprint"/>
       </div></div>
 
 
