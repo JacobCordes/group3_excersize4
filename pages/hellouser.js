@@ -11,6 +11,9 @@ import Points from '../comps/RewardsComps/PointsComp';
 import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
+import Clock from '../comps/TylersComps/Clock';
+import InfoButton from '../comps/TylersComps/Button'
+import Widget from '../comps/TylersComps/Widget'
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -96,11 +99,13 @@ export default function HelloUser() {
 
     <div className="left"><div>
       <h1>Good Morning.</h1>
-  
+        <Clock/>
       </div></div>
 
     <div className="mid"><div>
   <h1>What's going on nearby?</h1>
+  <Widget/>
+
       </div></div>
 
 
