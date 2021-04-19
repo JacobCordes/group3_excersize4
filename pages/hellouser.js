@@ -14,6 +14,7 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import Clock from '../comps/TylersComps/Clock';
 import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
+import NavBar from '../comps/NavBar/Nav';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -27,7 +28,7 @@ html, body{
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:125px;
+  grid-auto-rows:200px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -94,7 +95,9 @@ export default function HelloUser() {
  
 
     <div className="top"><div>
+      <NavBar/>
       <h1>Hello User</h1>
+      
       </div></div>
 
     <div className="left"><div>
