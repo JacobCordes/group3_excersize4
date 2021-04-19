@@ -11,6 +11,7 @@ import Points from '../comps/RewardsComps/PointsComp';
 import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
+import NavBar from '../comps/NavBar/Nav';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -24,7 +25,7 @@ html, body{
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:125px;
+  grid-auto-rows:200px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -91,6 +92,7 @@ export default function AboutUs() {
   
 
     <div className="top"><div>
+      <NavBar/>
       <h1>About Us</h1>
       </div></div>
 

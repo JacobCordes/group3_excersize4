@@ -15,6 +15,7 @@ import Clock from '../comps/TylersComps/Clock';
 import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
 import Header from '../comps/Header';
+import NavBar from '../comps/NavBar/Nav';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -45,36 +46,6 @@ html, body{
 }
 
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-
-
-li {
-  float: left;
-}
-
-li a {
-  
-  color: white;
-  text-align: center;
-  padding: 10px 16px;
-  text-decoration: none;
-  border-radius:3px;
-}
-
-li a:hover:not(.active) {
-  background-color: #54738E;
-}
-
-.active {
-  background-color: #4CAF50;
-}
 
 
 `;
@@ -92,6 +63,7 @@ export default function Home() {
         <li><a href="#">About Us</a></li>
         </ui>
         </nav> */}
+    
         <br></br><br></br><br></br>
         <Header />
       </div></div>
