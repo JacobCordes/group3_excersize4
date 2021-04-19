@@ -63,7 +63,7 @@ html, body{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:400px;
+  grid-auto-rows:600px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
