@@ -14,6 +14,7 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import Clock from '../comps/TylersComps/Clock';
 import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
+import Header from '../comps/Header';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -27,7 +28,7 @@ html, body{
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1500px;
+  grid-auto-rows:1000px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -42,6 +43,7 @@ html, body{
 .top > div:nth-child(odd){
   background:#7297A0;
 }
+
 
 ul {
   list-style-type: none;
@@ -82,16 +84,16 @@ export default function Home() {
   
 
     <div className="top"><div>
-      <nav><ui>
+      {/* <nav><ui>
         <li><a href="">Home</a></li>
         <li><a href="#">Information</a></li>
         <li><a href="#">Trash Log</a></li>
         <li><a href="#">Rewards</a></li>
         <li><a href="#">About Us</a></li>
         </ui>
-        </nav>
+        </nav> */}
         <br></br><br></br><br></br>
-      <h1>Main Logo goes here</h1>
+        <Header />
       </div></div>
 
 

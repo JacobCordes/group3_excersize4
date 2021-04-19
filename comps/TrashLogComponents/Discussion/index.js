@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 //----COMPONENT STYLING----//
 
@@ -62,6 +63,7 @@ const TrashInputs = ({
     
 }) => {
 
+    const router = useRouter();
    return <DivCont>  
        <Icon />
        <Item>Cans</Item> 

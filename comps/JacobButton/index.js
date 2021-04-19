@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 
 const ButtonDiv = styled.div `
@@ -28,7 +29,8 @@ const JacobButton = ({
     bgcolor="#FAD",
 }) => {
 
-   return <ButtonDiv><ButtonCont bg={bgcolor}>
+    const router = useRouter();
+   return <ButtonDiv onClick={()=>router.push("/")}>{text}<ButtonCont bg={bgcolor}>
        <ButtonInput>
            <ButtonText>{text}</ButtonText>
        </ButtonInput>
