@@ -61,7 +61,7 @@ html, body{
 }
 
 .left > div:nth-child(odd){
-  background:#54738E;
+  background:#7297A0;
 }
 
 .mid{
@@ -108,7 +108,6 @@ export default function HelloUser() {
     <div className="mid"><div>
   <h1>What's going on nearby?</h1>
   <Widget/>
-
       </div></div>
 
 

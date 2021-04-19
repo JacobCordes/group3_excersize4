@@ -58,7 +58,7 @@ html, body{
 }
 
 .left > div:nth-child(odd){
-  background:#54738E;
+  background:#7297A0;
 }
 
 .mid{

@@ -58,7 +58,7 @@ html, body{
 }
 
 .left > div:nth-child(odd){
-  background:#54738E;
+  background:#7297A0;
 }
 
 .mid{
@@ -111,7 +111,8 @@ export default function Home() {
   <TrashInputs />
   <TrashInputs />
   <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
-<RedButton/>
+<RedButton/><br></br>
+<br></br>
 <GreenButton/>
       </div></div>
          </HomeCont>
