@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const ClockCont = styled.div`
-display: flex;
+display: grid;
 flex-direction: column;
 justify-content: space-between;
 background-image: url(sunrise.png);
@@ -15,6 +16,7 @@ border-radius: 20px;
 const ClockTextTop = styled.div`
 color: white;
 padding: 10px;
+margin:105px;
 `
 
 const ClockTextBot = styled.div`

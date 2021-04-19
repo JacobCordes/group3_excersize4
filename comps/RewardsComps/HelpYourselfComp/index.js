@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const CardCont = styled.div`
   background-color:${props=>props.bg};
+  background-image: url(sunrise.png);
   padding:5px;
   border-radius:20px;
   height:155px;
@@ -37,6 +38,7 @@ const RightCol = styled.div`
 
 const SquareImages = ({
   bgcolor="#B2A68D"
+  
 
 }) =>{
 

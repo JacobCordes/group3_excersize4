@@ -12,6 +12,7 @@ import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
+import Logo from '../comps/Logo';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -58,7 +59,7 @@ html, body{
 }
 
 .left > div:nth-child(odd){
-  background:#54738E;
+  background:#7297A0;
 }
 
 .mid{
@@ -97,7 +98,7 @@ export default function AboutUs() {
       </div></div>
 
     <div className="left"><div>
-    <h1>Insert Logo Here</h1>
+    <Logo/>
 
       </div></div>
 
