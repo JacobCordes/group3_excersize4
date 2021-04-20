@@ -25,6 +25,7 @@ html, body{
   padding:0px;
 }
 
+
 .top{
   display:grid;
   grid-template-columns: 1fr;
@@ -51,13 +52,13 @@ html, body{
   text-align:center;
   font-family:Martel Sans;
   color:white;
-  justify-content:center;
 }
 
 
 .left > div{
   background:white;
   padding:1em;
+  align-items:center;
 }
 
 .left > div:nth-child(odd){

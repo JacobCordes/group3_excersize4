@@ -98,9 +98,9 @@ export default function Home() {
 
     <div className="left"><div>
       <h1>Your Statistics</h1>
-  <DailyTrash/>
-  <DailyTrash text="Weekly Trash Collected: 27"/>
-  <DailyTrash text="Weekly Trash Goal: 40"/>
+  <DailyTrash/><br></br>
+  <DailyTrash text="Weekly Trash Collected: 27"/><br></br>
+  <DailyTrash text="Weekly Trash Goal: 40"/><br></br>
       </div></div>
 
     <div className="mid"><div>
