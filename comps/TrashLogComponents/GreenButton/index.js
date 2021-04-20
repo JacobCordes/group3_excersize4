@@ -1,3 +1,5 @@
+import { Router } from 'next/router';
+import {useRouter} from 'next/router'
 //----IMPORTS----//
 
 import React from 'react';
@@ -33,9 +35,11 @@ const ButtonText1 = styled.h3 `
 
 const GreenButton = ({
     text="Looks Good!",
+    routeTo="/"
 }) => {
 
-   return <ButtonCont1 >       
+    const router = useRouter();
+   return <ButtonCont1 onClick={()=>router.push(routeTo)}>       
        <Button>
            <ButtonText1>{text}</ButtonText1>
            </Button>

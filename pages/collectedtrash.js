@@ -57,11 +57,11 @@ export default function Home() {
 
     <div className="top"><div>
     <br></br><br></br><br></br><br></br><br></br><br></br><h1>Awesome!</h1>
-  <h3>You've helped collect<br></br>2 pieces of trash</h3><br></br>
+  <h3>You've helped collect<br></br>4 pieces of trash</h3><br></br>
 <Earth />
-  <h3>You've Earned<br></br>2 Points!</h3>
+  <h3>You've Earned<br></br>4 Points!</h3>
 
-<GreenButton text="What did we do?"/>
+<GreenButton routeTo="/article1" text="What did we do?"/>
       </div></div>
 
 

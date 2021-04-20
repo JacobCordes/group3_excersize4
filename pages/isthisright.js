@@ -16,6 +16,7 @@ import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
 import Header from '../comps/Header';
 import NavBar from '../comps/NavBar/Nav';
+import {useRouter} from 'next/router'
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -51,17 +52,19 @@ html, body{
 `;
 
 export default function Home() {
+
+  const router = useRouter();
   return <HomeCont>
   
 
     <div className="top"><div>
   <h1>Is This Right?</h1><br></br><br></br><br></br><br></br>
-  <h3>1x Can<br></br>1x Bottle</h3>
+  <h3>1x Can<br></br>1x Bottle<br></br>1x Cardboard<br></br>1x Organic</h3>
   <hr></hr>
-  <h3>Total 2 items<br></br>Collected</h3><br></br><br></br><br></br>
-  <RedButton text="Nope."/><br></br>
+  <h3>Total 4 items<br></br>Collected</h3><br></br><br></br><br></br>
+  <RedButton routeTo="/trashlog"text="Nope."/><br></br>
 <br></br>
-<GreenButton text="Yeah!"/>
+<GreenButton routeTo="/collectedtrash"text="Yeah!"/>
       </div></div>
 
 

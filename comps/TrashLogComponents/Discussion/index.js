@@ -7,7 +7,7 @@ import {useRouter} from 'next/router';
 //----COMPONENT STYLING----//
 
 
-const DivCont = styled.div `
+const DivCont = styled.button `
 display:flex;
 margin:5px;
 background-color:#7297A0;
@@ -18,22 +18,26 @@ color:white;
 `;
 
 const Icon = styled.img `
-
+background-image: url(bottles.png);
+height:63px;
+padding-left:45px;
 `;
 
 const Item = styled.h1 `
 font-family:Martel Sans;
 `;
 
-const Numbers = styled.div `
+const Numbers = styled.button `
 background-color:white;
 color:#54738E;
 text-align:center;
 border-radius:20px;
-font-size:60px;
+font-size:35px;
 font-family:Martel Sans;
-max-height:50px;
+max-height:60px;
 max-width:50px;
+margin-left:15px;
+margin-top:25px;
 `;
 
 
@@ -44,6 +48,8 @@ background-color:#54738E;
 border:none;
 border-radius:10px;
 font-size:42px;
+margin-left:20px;
+margin-top:20px;
 `;
 
 
@@ -53,7 +59,10 @@ background-color:#54738E;
 border:none;
 border-radius:10px;
 font-size:42px;
+margin:20px;
 `;
+
+
 
 
 //----COMPONENT BUILDS----//
@@ -65,13 +74,13 @@ const TrashInputs = ({
 
     const router = useRouter();
    return <DivCont>  
-       <Icon />
        <Item>Cans</Item> 
-       <Numbers>0</Numbers>
+       <Icon />
+       <Numbers>1</Numbers>
        <PlusButton>+</PlusButton>
        <MinusButton>-</MinusButton>
        </DivCont>
-   
+       
 }
 
 

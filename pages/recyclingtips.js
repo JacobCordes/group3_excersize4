@@ -108,7 +108,7 @@ export default function Information() {
       <p>• Don’t recycle anything smaller than a credit card. These objects are too small to be sorted and can jam the recycling equipment.<br></br><br></br>
       • Glass can be recycled endlessly; it does not wear out after several recyclings, so be sure to always recycle your glass bottles and containers.</p>
   <br></br><br></br>
-  <InfoButton text="Go Back"/>
+  <InfoButton routeTo="/information" text="Go Back"/>
       </div></div>
 
    

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router'
 
 //----COMPONENT STYLING----//
 
@@ -33,9 +34,11 @@ const ButtonText1 = styled.h3 `
 
 const RedButton = ({
     text="Reset",
+    routeTo="/"
 }) => {
 
-   return <ButtonCont1 >       
+    const router = useRouter();
+   return <ButtonCont1 onClick={()=>router.push(routeTo)}>       
        <Button>
            <ButtonText1>{text}</ButtonText1>
            </Button>
