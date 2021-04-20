@@ -17,12 +17,13 @@ border: none;
 `
 
 const InfoButton = ({
-    text="Test Button"
+    text="Test Button",
+    routeTo="/"
 }) => {
 
     const router = useRouter();
 
-    return <InfoButtonCont onClick={()=>router.push("/hellouser")}>
+    return <InfoButtonCont onClick={()=>router.push(routeTo)}>
         <ButtonInput>{text}</ButtonInput>
     </InfoButtonCont>
 }

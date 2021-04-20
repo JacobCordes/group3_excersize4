@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {useRouter} from 'next/router'
 import JacobButton from '../comps/JacobButton';
 import KodiButton from '../comps/Kodibutton';
 import BonnieButton from '../comps/BonnieButton';
@@ -92,8 +93,11 @@ html, body{
 `;
 
 export default function Information() {
+
+  const router = useRouter();
   return <InformationCont>
  
+
 
     <div className="top"><div>
       <NavBar/>
@@ -108,9 +112,9 @@ export default function Information() {
 
     <div className="mid"><div>
   <h1>Discussion is Key</h1>
-<InfoButton text="Pro-Recycling Tips" /><br></br>
-<InfoButton text="The Best Compost Tips"/><br></br>
-<InfoButton text="Minding Your Eco-Footprint"/>
+<InfoButton routeTo="/recyclingtips" text="Pro-Recycling Tips" /><br></br>
+<InfoButton routeTo="/composttips" text="The Best Compost Tips"/><br></br>
+<InfoButton routeTo="/ecofootprint" text="Minding Your Eco-Footprint"/>
       </div></div>
 
 

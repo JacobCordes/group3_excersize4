@@ -111,7 +111,7 @@ export default function Information() {
       • Take shorter, less frequent showers <br></br><br></br>
       • Run the dishwasher and the washing machine only when full. <br></br><br></br></p>
   <br></br>
-  <InfoButton text="Go Back"/>
+  <InfoButton routeTo="/information" text="Go Back"/>
       </div></div>
 
    

@@ -48,7 +48,7 @@ html, body{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:800px;
+  grid-auto-rows:1000px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -109,7 +109,7 @@ export default function Information() {
 Produce stickers are made of plastic. That means they do not break down in the compost.<br></br><br></br>
 • Banana peels, peach peels, and orange rinds may contain pesticide residues and should be kept out of the compost.</p>
   <br></br><br></br>
-  <InfoButton text="Go Back"/>
+  <InfoButton routeTo="/information" text="Go Back"/>
       </div></div>
 
    

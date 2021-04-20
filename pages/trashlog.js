@@ -12,6 +12,7 @@ import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
+import {useRouter} from 'next/router'
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -88,6 +89,8 @@ html, body{
 `;
 
 export default function Home() {
+  const router = useRouter();
+
   return <HomeCont>
   
 
@@ -110,10 +113,11 @@ export default function Home() {
   <TrashInputs />
   <TrashInputs />
   <TrashInputs />
+
   <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
 <RedButton/><br></br>
 <br></br>
-<GreenButton/>
+<GreenButton routeTo="/isthisright"/>
       </div></div>
          </HomeCont>
 }

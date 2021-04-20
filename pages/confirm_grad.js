@@ -45,7 +45,7 @@ html, body{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:600px;
+  grid-auto-rows:200px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -97,16 +97,16 @@ export default function Rewards() {
       <h1>Rewards</h1>
       </div></div>
 
-    <div className="left"><div>
-    <Points/>
+    <div className="left"><div><br></br>
+    <DailyTrash text="Your Total Points: 89" />
 
       </div></div>
 
     <div className="mid"><div>
-  <h1>BIC Lead Pencils</h1>
+  <h1>Credit For Tuition</h1>
 <GradImg/>
-<h2>Redeem 50 Points For <br></br> School Supplies?</h2>
-<GreenButton/>
+<h2>Redeem 50 Points For <br></br>5$ Credit For Tuition?</h2>
+<GreenButton text="Yeah!"/>
       </div></div>
 
 
