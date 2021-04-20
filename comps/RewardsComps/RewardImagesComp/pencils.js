@@ -15,6 +15,7 @@ margin-bottom:20px;
 margin-left:5px;
 display:inline-flex;
 `
+
 const ImgBorder = styled.div`
 margin-top:10px;
 `
