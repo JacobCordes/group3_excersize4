@@ -14,12 +14,13 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import Clock from '../comps/TylersComps/Clock';
 import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
+import Header from '../comps/Header';
 import NavBar from '../comps/NavBar/Nav';
-import ComHight from '../comps/TylersComps/CommunityHighlights';
+import Earth from '../comps/EarthPic';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
-const InformationCont = styled.div`
+const HomeCont = styled.div`
 
 html, body{
   margin:0px;
@@ -29,7 +30,7 @@ html, body{
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:200px;
+  grid-auto-rows:1000px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -42,80 +43,29 @@ html, body{
 }
 
 .top > div:nth-child(odd){
-  background:#A88C7D;
-}
-
-.left{
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows:600px;
-  text-align:center;
-  font-family:Martel Sans;
-  color:white;
-  justify-content:center;
+  background:#B2A68D;
 }
 
 
-.left > div{
-  background:white;
-  padding:1em;
-}
-
-.left > div:nth-child(odd){
-  background:#7297A0;
-}
-
-.mid{
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows:1000px;
-  text-align:center;
-  font-family:Martel Sans;
-  color:white;
-}
 
 
-.mid > div{
-  background:white;
-  padding:1em;
-}
-
-.mid > div:nth-child(odd){
-  background:#9DBA94;
-}
-
-    .bot {
-      padding:10px;
-    }
-
-  }
 `;
 
-export default function Information() {
-  return <InformationCont>
- 
+export default function Home() {
+  return <HomeCont>
+  
 
     <div className="top"><div>
-      <NavBar/>
-      <h1>Information</h1>
-      </div></div>
+    <br></br><br></br><br></br><br></br><br></br><br></br><h1>Awesome!</h1>
+  <h3>You've helped collect<br></br>2 pieces of trash</h3><br></br>
+<Earth />
+  <h3>You've Earned<br></br>2 Points!</h3>
 
-    <div className="left"><div>
-      <h1>Community Highlights</h1>
-      <ComHight />
-  
-      </div></div>
-
-    <div className="mid"><div>
-  <h1>Discussion is Key</h1>
-<InfoButton text="Pro-Recycling Tips" /><br></br>
-<InfoButton text="The Best Compost Tips"/><br></br>
-<InfoButton text="Minding Your Eco-Footprint"/>
+<GreenButton text="What did we do?"/>
       </div></div>
 
 
-    <div className="bot"></div>
-         </InformationCont>
+         </HomeCont>
 }
 {
   

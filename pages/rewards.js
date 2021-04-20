@@ -44,7 +44,7 @@ html, body{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:600px;
+  grid-auto-rows:200px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -96,8 +96,8 @@ export default function Rewards() {
       <h1>Rewards</h1>
       </div></div>
 
-    <div className="left"><div>
-    <Points/>
+    <div className="left"><div><br></br>
+   <DailyTrash text="Your Total Points: 89" />
 
       </div></div>
 

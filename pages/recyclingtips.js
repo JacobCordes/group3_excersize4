@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {useRouter} from 'next/router'
 import JacobButton from '../comps/JacobButton';
 import KodiButton from '../comps/Kodibutton';
 import BonnieButton from '../comps/BonnieButton';
@@ -15,7 +16,6 @@ import Clock from '../comps/TylersComps/Clock';
 import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
 import NavBar from '../comps/NavBar/Nav';
-import ComHight from '../comps/TylersComps/CommunityHighlights';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -48,7 +48,7 @@ html, body{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:600px;
+  grid-auto-rows:800px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -62,7 +62,7 @@ html, body{
 }
 
 .left > div:nth-child(odd){
-  background:#7297A0;
+  background:#9DBA94;
 }
 
 .mid{
@@ -92,6 +92,8 @@ html, body{
 `;
 
 export default function Information() {
+
+    const router = useRouter();
   return <InformationCont>
  
 
@@ -101,20 +103,15 @@ export default function Information() {
       </div></div>
 
     <div className="left"><div>
-      <h1>Community Highlights</h1>
-      <ComHight />
-  
+      <h2>Discussion is Key</h2>
+      <h1>Pro-Recycling Tips</h1>
+      <p>• Don’t recycle anything smaller than a credit card. These objects are too small to be sorted and can jam the recycling equipment.<br></br><br></br>
+      • Glass can be recycled endlessly; it does not wear out after several recyclings, so be sure to always recycle your glass bottles and containers.</p>
+  <br></br><br></br>
+  <InfoButton text="Go Back"/>
       </div></div>
 
-    <div className="mid"><div>
-  <h1>Discussion is Key</h1>
-<InfoButton text="Pro-Recycling Tips" /><br></br>
-<InfoButton text="The Best Compost Tips"/><br></br>
-<InfoButton text="Minding Your Eco-Footprint"/>
-      </div></div>
-
-
-    <div className="bot"></div>
+   
          </InformationCont>
 }
 {

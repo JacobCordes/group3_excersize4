@@ -98,6 +98,7 @@ export default function AboutUs() {
       </div></div>
 
     <div className="left"><div>
+      <br></br><br></br><br></br><br></br><br></br>
     <Logo/>
 
       </div></div>

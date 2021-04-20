@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router'
 
 const InfoButtonCont = styled.div`
 
@@ -19,9 +20,9 @@ const InfoButton = ({
     text="Test Button"
 }) => {
 
+    const router = useRouter();
 
-
-    return <InfoButtonCont>
+    return <InfoButtonCont onClick={()=>router.push("/hellouser")}>
         <ButtonInput>{text}</ButtonInput>
     </InfoButtonCont>
 }

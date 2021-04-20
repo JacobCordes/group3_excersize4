@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 
 const LogoImg = styled.img`
-background-image: url(logo.png);
-width: 247px;
-height: 247px;
+background-image: url(EarthPic.png);
+width: 250px;
+height: 246px;
 `
 
-const Logo = ({  
+const Earth = ({  
 
 }) =>{
 
@@ -17,4 +17,4 @@ const Logo = ({
   </LogoImg>
 }
 
-export default Logo
+export default Earth

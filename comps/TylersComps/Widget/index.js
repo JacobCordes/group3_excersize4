@@ -9,6 +9,11 @@ width: 158px;
 height: 158px;
 font-size: 24px;
 border-radius: 20px;
+
+div:hover{
+   color:limegreen;
+}
+
 `
 
 const WidgetText = styled.div`
@@ -22,8 +27,8 @@ const Widget = ({
     text2="Park"
 }) => {
 
-    return <WidgetCont>
-        <WidgetText>{text1}<br></br>{text2}</WidgetText>
+    return <WidgetCont className="jerry">
+        <WidgetText >{text1}<br></br>{text2}</WidgetText>
     </WidgetCont>
 }
 
