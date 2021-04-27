@@ -138,13 +138,13 @@ const Widget = ({
   const router = useRouter();
   return <CardDiv>
         <WidgetDiv>
-        <CardCont1 bg={bgcolor} onClick={()=>router.push("/")}></CardCont1>
-        <CardCont2 bg={bgcolor} onClick={()=>router.push("/")}></CardCont2>
-        <CardCont3 bg={bgcolor} onClick={()=>router.push("/")}></CardCont3>
+        <CardCont1 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont1>
+        <CardCont2 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont2>
+        <CardCont3 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont3>
 
-        <CardCont4 bg={bgcolor} onClick={()=>router.push("/")}></CardCont4>
-        <CardCont5 bg={bgcolor} onClick={()=>router.push("/")}></CardCont5>
-        <CardCont6 bg={bgcolor} onClick={()=>router.push("/")}></CardCont6>
+        <CardCont4 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont4>
+        <CardCont5 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont5>
+        <CardCont6 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont6>
         </WidgetDiv>
   </CardDiv>
   
