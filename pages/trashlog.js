@@ -1,8 +1,4 @@
 import styled from 'styled-components';
-import JacobButton from '../comps/JacobButton';
-import KodiButton from '../comps/Kodibutton';
-import BonnieButton from '../comps/BonnieButton';
-import TylerButton from '../comps/TylerButton';
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
@@ -101,6 +97,7 @@ export default function Home() {
   
 
     <div className="top"><div>
+    <SmallLogo />
       <NavBar/>
       <h1 className="PageHead">Trash Log</h1>
       </div></div>
