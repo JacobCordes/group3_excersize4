@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import {useRouter} from 'next/router';
 
 const LogoImg = styled.div`
 background-image: url(logo.png);
@@ -33,8 +33,8 @@ div:hover{
 const SmallLogo = ({  
 
 }) =>{
-
-  return<LogoDiv><LogoImg>
+  const router = useRouter();
+  return<LogoDiv><LogoImg onClick={()=>router.push("/hellouser")}>
     
 
   </LogoImg>

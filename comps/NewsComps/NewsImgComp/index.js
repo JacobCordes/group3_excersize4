@@ -7,9 +7,9 @@ const CardCont1 = styled.div`
   background-image: url(stanleyparktweet.jpg);
   background-size: 100% 100%;
   padding:5px;
-  border-radius:20px;
-  height:243px;
-  width:180px;
+  border-radius:10px;
+  height:183px;
+  width:120px;
   justify-content:center;
   flex-direction:column;
   margin-bottom:20px;
@@ -25,9 +25,9 @@ const CardCont2 = styled.div`
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding:5px;
-  border-radius:20px;
-  height:243px;
-  width:180px;
+  border-radius:10px;
+  height:183px;
+  width:120px;
   justify-content:center;
   flex-direction:column;
   margin-bottom:20px;
@@ -41,7 +41,7 @@ const CardCont2 = styled.div`
 const CardDiv = styled.div`
 margin-bottom:20px;
 min-width:350px;
-min-height:540px;
+min-height:400px;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -50,7 +50,7 @@ align-items:center;
 
 const WidgetDiv = styled.div`
 width:350px;
-height:540px;
+height:400px;
 display:flex;
 justify-content:center;
 align-items:center;

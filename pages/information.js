@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 import {useRouter} from 'next/router'
-import JacobButton from '../comps/JacobButton';
-import KodiButton from '../comps/Kodibutton';
-import BonnieButton from '../comps/BonnieButton';
-import TylerButton from '../comps/TylerButton';
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
@@ -106,6 +102,7 @@ export default function Information() {
 
 
     <div className="top"><div>
+    <SmallLogo />
       <NavBar/>
       <h1 className="PageHead">Information</h1>
       </div></div>

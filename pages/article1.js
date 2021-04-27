@@ -1,8 +1,4 @@
 import styled from 'styled-components';
-import JacobButton from '../comps/JacobButton';
-import KodiButton from '../comps/Kodibutton';
-import BonnieButton from '../comps/BonnieButton';
-import TylerButton from '../comps/TylerButton';
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
@@ -50,7 +46,7 @@ html, body{
 .left{
     display:grid;
     grid-template-columns: 1fr;
-    grid-auto-rows:1800px;
+    grid-auto-rows:2400px;
     text-align:center;
     font-family:Martel Sans;
     color:white;
