@@ -8,12 +8,12 @@ const CardCont1 = styled.div`
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
-  height:155px;
-  width:155px;
+  height:120px;
+  width:120px;
   justify-content:center;
   flex-direction:column;
   margin-bottom:20px;
-  margin-left:5px;
+  margin-right:5px;
   display:inline-flex;
   &>*{
     color:#FFF;
@@ -27,12 +27,12 @@ const CardCont2 = styled.div`
   background-repeat: no-repeat;
   padding:5px;
   border-radius:20px;
-  height:155px;
-  width:155px;
+  height:120px;
+  width:120px;
   justify-content:center;
   flex-direction:column;
   margin-bottom:20px;
-  margin-left:5px;
+  margin-right:5px;
   display:inline-flex;
   &>*{
     color:#FFF;
@@ -45,12 +45,12 @@ const CardCont3 = styled.div`
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
-  height:155px;
-  width:155px;
+  height:120px;
+  width:120px;
   justify-content:center;
   flex-direction:column;
   margin-bottom:20px;
-  margin-left:5px;
+  margin-right:5px;
   display:inline-flex;
   &>*{
     color:#FFF;
@@ -63,12 +63,12 @@ const CardCont4 = styled.div`
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
-  height:155px;
-  width:155px;
+  height:120px;
+  width:120px;
   justify-content:center;
   flex-direction:column;
   margin-bottom:20px;
-  margin-left:5px;
+  margin-right:5px;
   display:inline-flex;
   &>*{
     color:#FFF;
@@ -81,12 +81,12 @@ const CardCont5 = styled.div`
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
-  height:155px;
-  width:155px;
+  height:120px;
+  width:120px;
   justify-content:center;
   flex-direction:column;
   margin-bottom:20px;
-  margin-left:5px;
+  margin-right:5px;
   display:inline-flex;
   &>*{
     color:#FFF;
@@ -99,12 +99,12 @@ const CardCont6 = styled.div`
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
-  height:155px;
-  width:155px;
+  height:120px;
+  width:120px;
   justify-content:center;
   flex-direction:column;
   margin-bottom:20px;
-  margin-left:5px;
+  margin-right:5px;
   display:inline-flex;
   &>*{
     color:#FFF;
@@ -113,8 +113,8 @@ const CardCont6 = styled.div`
 
 const CardDiv = styled.div`
 margin-bottom:20px;
-min-width:414px;
-min-height:634px;
+min-width:350px;
+min-height:540px;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -122,8 +122,8 @@ align-items:center;
 `
 
 const WidgetDiv = styled.div`
-width:414px;
-height:634px;
+width:350px;
+height:540px;
 display:flex;
 justify-content:center;
 align-items:center;

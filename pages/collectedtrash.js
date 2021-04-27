@@ -17,6 +17,7 @@ import Widget from '../comps/TylersComps/Widget'
 import Header from '../comps/Header';
 import NavBar from '../comps/NavBar/Nav';
 import Earth from '../comps/EarthPic';
+import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 

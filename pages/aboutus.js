@@ -13,6 +13,7 @@ import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
 import Logo from '../comps/Logo';
+import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -23,10 +24,15 @@ html, body{
   padding:0px;
 }
 
+.PageHead{
+  padding:0px;
+  margin:0px;
+}
+
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:200px;
+  grid-auto-rows:150px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -45,7 +51,7 @@ html, body{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:600px;
+  grid-auto-rows:350px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -65,7 +71,7 @@ html, body{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:600px;
+  grid-auto-rows:630px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -94,11 +100,11 @@ export default function AboutUs() {
 
     <div className="top"><div>
       <NavBar/>
-      <h1>About Us</h1>
+      <h1 className="PageHead">About Us</h1>
       </div></div>
 
     <div className="left"><div>
-      <br></br><br></br><br></br><br></br><br></br>
+      <br></br>
     <Logo/>
 
       </div></div>

@@ -62,6 +62,15 @@ font-size:42px;
 margin:20px;
 `;
 
+const CardDiv = styled.div`
+
+min-width:200px;
+min-height:150px;
+display:flex;
+justify-content:center;
+align-items:center;
+`
+
 
 
 
@@ -73,14 +82,14 @@ const TrashInputs = ({
 }) => {
 
     const router = useRouter();
-   return <DivCont>  
+   return <CardDiv><DivCont>  
        <Item>Cans</Item> 
        <Icon />
        <Numbers>1</Numbers>
        <PlusButton>+</PlusButton>
        <MinusButton>-</MinusButton>
        </DivCont>
-       
+       </CardDiv>
 }
 
 

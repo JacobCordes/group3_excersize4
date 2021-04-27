@@ -17,6 +17,7 @@ import Widget from '../comps/TylersComps/Widget'
 import Header from '../comps/Header';
 import NavBar from '../comps/NavBar/Nav';
 import {useRouter} from 'next/router'
+import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
