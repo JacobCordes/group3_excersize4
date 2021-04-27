@@ -26,9 +26,10 @@ li:hover{
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right:0;
-    height: 100vh;
+    height: 42vh;
     width:300;
-    padding-top: 3.5rem;
+    border-radius:20px 0px 0px 20px;
+    padding-top: 2.5rem;
     translation; transform 0.3s ease-in-out;
 
     li{

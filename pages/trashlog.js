@@ -13,6 +13,7 @@ import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
 import {useRouter} from 'next/router'
+import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -23,10 +24,15 @@ html, body{
   padding:0px;
 }
 
+.PageHead{
+  padding:0px;
+  margin:0px;
+}
+
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:200px;
+  grid-auto-rows:150px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -45,7 +51,7 @@ html, body{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:600px;
+  grid-auto-rows:525px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -96,7 +102,7 @@ export default function Home() {
 
     <div className="top"><div>
       <NavBar/>
-      <h1>Trash Log</h1>
+      <h1 className="PageHead">Trash Log</h1>
       </div></div>
 
     <div className="left"><div>
@@ -114,7 +120,7 @@ export default function Home() {
   <TrashInputs />
   <TrashInputs />
 
-  <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+  <br></br> <br></br> <br></br>
 <RedButton/><br></br>
 <br></br>
 <GreenButton routeTo="/isthisright"/>

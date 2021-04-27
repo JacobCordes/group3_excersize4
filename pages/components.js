@@ -14,6 +14,7 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import Clock from '../comps/TylersComps/Clock';
 import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
+import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 

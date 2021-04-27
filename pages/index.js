@@ -16,6 +16,7 @@ import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
 import Header from '../comps/Header';
 import NavBar from '../comps/NavBar/Nav';
+import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 

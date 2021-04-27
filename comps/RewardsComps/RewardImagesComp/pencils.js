@@ -6,7 +6,6 @@ background-color:${props=>props.bg};
 background-image: url(pencilicon.png);
 background-size: 100% 100%;
 padding:5px;
-border-radius:20px;
 height:234px;
 width:234px;
 justify-content:center;
