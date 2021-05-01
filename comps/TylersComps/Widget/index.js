@@ -22,7 +22,7 @@ const CardCont1 = styled.div`
 
 const CardCont2 = styled.div`
   background-color:${props=>props.bg};
-  background-image: url(stanleypark.jpg);
+  background-image: url(GranvilleIsland.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding:5px;
@@ -41,7 +41,7 @@ const CardCont2 = styled.div`
 
 const CardCont3 = styled.div`
   background-color:${props=>props.bg};
-  background-image: url(stanleypark.jpg);
+  background-image: url(Kitsilano.jpg);
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
@@ -59,7 +59,7 @@ const CardCont3 = styled.div`
 
 const CardCont4 = styled.div`
   background-color:${props=>props.bg};
-  background-image: url(stanleypark.jpg);
+  background-image: url(EastVan.jpg);
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
@@ -77,7 +77,7 @@ const CardCont4 = styled.div`
 
 const CardCont5 = styled.div`
   background-color:${props=>props.bg};
-  background-image: url(stanleypark.jpg);
+  background-image: url(VicFraserview.jpg);
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
@@ -95,7 +95,7 @@ const CardCont5 = styled.div`
 
 const CardCont6 = styled.div`
   background-color:${props=>props.bg};
-  background-image: url(stanleypark.jpg);
+  background-image: url(ScienceWorld.jpg);
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
@@ -138,13 +138,13 @@ const Widget = ({
   const router = useRouter();
   return <CardDiv>
         <WidgetDiv>
-        <CardCont1 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont1>
-        <CardCont2 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont2>
-        <CardCont3 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont3>
+        <CardCont1 bg={bgcolor} onClick={()=>router.push("/stanleypark")}>Stanley Park</CardCont1>
+        <CardCont2 bg={bgcolor} onClick={()=>router.push("/granville_island")}>Granville Island</CardCont2>
+        <CardCont3 bg={bgcolor} onClick={()=>router.push("/kitsilano")}>Kitsilano</CardCont3>
 
-        <CardCont4 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont4>
-        <CardCont5 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont5>
-        <CardCont6 bg={bgcolor} onClick={()=>router.push("/stanleypark")}></CardCont6>
+        <CardCont4 bg={bgcolor} onClick={()=>router.push("/eastvan")}>East Vancouver</CardCont4>
+        <CardCont5 bg={bgcolor} onClick={()=>router.push("/victoria_fraserview")}>Victoria Fraserview</CardCont5>
+        <CardCont6 bg={bgcolor} onClick={()=>router.push("/scienceworld")}>Science World</CardCont6>
         </WidgetDiv>
   </CardDiv>
   

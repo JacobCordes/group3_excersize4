@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ImgDiv = styled.div`
 background-color:${props=>props.bg};
-background-image: url(stanleypark.jpg);
+background-image: url(VicFraserview.jpg);
 background-size: 100% 100%;
 padding:5px;
 border-radius:20px;
@@ -27,7 +27,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 `
-  const HeroImg = ({
+  const VicFraserviewImg = ({
 
   }) =>{
   
@@ -39,4 +39,4 @@ align-items:center;
     
   }
   
-  export default HeroImg
+  export default VicFraserviewImg

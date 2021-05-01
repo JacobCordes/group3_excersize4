@@ -13,7 +13,7 @@ import Widget from '../comps/TylersComps/Widget'
 import NavBar from '../comps/NavBar/Nav';
 import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
-import StanleyParkImg from '../comps/NewsComps/StanleyParkComp';
+import EastVanImg from '../comps/NewsComps/EastVanComp';
 import StanleyParkNews from '../comps/NewsComps/NewsImgComp';
 
 
@@ -53,10 +53,10 @@ html, body{
   display:grid;
   grid-template-columns: 1fr;
   grid-auto-rows:600px;
-  height:327px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
+  height:327px;
 }
 
 
@@ -111,12 +111,12 @@ export default function HelloUser() {
 
     <div className="left"><div>
       <h1>What's going on nearby?</h1>
-        <StanleyParkImg/>
+        <EastVanImg/>
       </div></div>
 
     <div className="mid"><div>
-  <h1>Stanley Park</h1>
-  <a class="twitter-timeline" data-width="500px" data-height="600px" href="https://twitter.com/StanleyParkEco?ref_src=twsrc%5Etfw">Tweets by StanleyParkEco</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <h1>East Vancouver</h1>
+  <a class="twitter-timeline" data-width="500" data-height="600" href="https://twitter.com/CityofVancouver?ref_src=twsrc%5Etfw">Tweets by CityofVancouver</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div></div>
 
          </HelloUserCont>
