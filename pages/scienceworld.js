@@ -13,7 +13,7 @@ import Widget from '../comps/TylersComps/Widget'
 import NavBar from '../comps/NavBar/Nav';
 import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
-import HeroImg from '../comps/NewsComps/HeroImageComp';
+import ScienceWorldImg from '../comps/NewsComps/ScienceWorldComp';
 import StanleyParkNews from '../comps/NewsComps/NewsImgComp';
 
 
@@ -56,6 +56,7 @@ html, body{
   text-align:center;
   font-family:Martel Sans;
   color:white;
+  height:327px;
 }
 
 
@@ -110,7 +111,7 @@ export default function HelloUser() {
 
     <div className="left"><div>
       <h1>What's going on nearby?</h1>
-        <HeroImg/>
+        <ScienceWorldImg/>
       </div></div>
 
     <div className="mid"><div>
