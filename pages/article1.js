@@ -84,11 +84,10 @@ export default function Home() {
 <h2>How to Recycle Aluminum Cans</h2>
 <p>Recycling aluminum cans is easy. When they are empty, rinse them out so they are clean and either return them to the store for deposit or recycle them with the rest of your recyclable household materials. If your state has an aluminum can deposit, it is marked on the can and the store charges you that extra deposit amount at the time of purchase. Most facilities that pay deposits do not take crushed aluminum cans. If there is no deposit, crushing the cans saves on storage space until recycled. Most disposal services pick up recycling with the rest of the garbage but may have specific requirements such as certain pickup days and no co-mingling with other recyclables. Other cities have recycling facilities at designated areas, at community transfer stations, or even offer recycling services through the school. Regardless of how aluminum cans are recycled, within 60 days they are back on the shelf as new aluminum cans and ready to repeat the cycle for the next 400 years.
 </p>
-
+<InfoButton routeTo="/trashlog" text="Go Back"/>
    </div></div>
 
-
-         </HomeCont>
+</HomeCont>
 }
 {
   

@@ -7,8 +7,12 @@ import Points from '../comps/RewardsComps/PointsComp';
 import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
+import Clock from '../comps/TylersComps/Clock';
+import InfoButton from '../comps/TylersComps/Button'
+import Widget from '../comps/TylersComps/Widget'
+import Header from '../comps/Header';
 import NavBar from '../comps/NavBar/Nav';
-import {useRouter} from 'next/router'
+import Earth from '../comps/EarthPic';
 import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
 
@@ -20,15 +24,10 @@ html, body{
   padding:0px;
 }
 
-.PageHead{
-  padding:0px;
-  margin:0px;
-}
-
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:150px;
+  grid-auto-rows:250px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -45,83 +44,45 @@ html, body{
 }
 
 .left{
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows:525px;
-  text-align:center;
-  font-family:Martel Sans;
-  color:white;
-  justify-content:center;
-}
-
-
-.left > div{
-  background:white;
-  padding:1em;
-}
-
-.left > div:nth-child(odd){
-  background:#7297A0;
-}
-
-.mid{
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows:1000px;
-  text-align:center;
-  font-family:Martel Sans;
-  color:white;
-}
-
-
-.mid > div{
-  background:white;
-  padding:1em;
-}
-
-.mid > div:nth-child(odd){
-  background:#9DBA94;
-}
-
-    .bot {
-      padding:10px;
-    }
-
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:2400px;
+    text-align:center;
+    font-family:Martel Sans;
+    color:white;
   }
+  
+  
+  .left > div{
+    background:white;
+    padding:1em;
+  }
+  
+  .left > div:nth-child(odd){
+    background:#B2A68D;
+  }
+
+
+
 `;
 
 export default function Home() {
-  const router = useRouter();
-
   return <HomeCont>
   
 
     <div className="top"><div>
-    <SmallLogo />
-      <NavBar/>
-      <h1 className="PageHead">Trash Log</h1>
+   <h1>How do I<br></br>Recycle Cans?</h1>
       </div></div>
 
-    <div className="left"><div>
-      <h1>Your Statistics</h1>
-  <DailyTrash/><br></br>
-  <DailyTrash text="Weekly Trash Collected: 27"/><br></br>
-  <DailyTrash text="Weekly Trash Goal: 40"/><br></br>
-      </div></div>
+      <div className="left"><div>
+   <p>The best way to recycle your<br></br>cans is to sort them by size and<br></br>whether they are cans used for<br></br>alcohol or not.
+</p><br></br>
+<p>Sorting it allows you to bring it<br></br> to the bottle depot to get a <br></br>refund on your used cans!<br></br>So youy get some money from<br></br>them, and get a bonus from us!
+</p>
+<InfoButton routeTo="/trashlog" text="Go Back"/>
+   </div></div>
 
-    <div className="mid"><div>
-  <h1>What did you collect today?</h1>
 
-  <TrashInputs />
-  <TrashInputs />
-  <TrashInputs />
-  <TrashInputs />
-
-  <br></br> <br></br> <br></br>
-<RedButton/><br></br>
-<br></br>
-<GreenButton routeTo="/isthisright"/>
-      </div></div>
          </HomeCont>
 }
 {

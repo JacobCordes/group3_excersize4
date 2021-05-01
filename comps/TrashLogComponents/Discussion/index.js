@@ -15,6 +15,7 @@ max-width:300px;
 max-height:100px;
 border-radius:30px;
 color:white;
+border-style: none;
 `;
 
 const Icon = styled.img `
@@ -38,6 +39,7 @@ max-height:60px;
 max-width:50px;
 margin-left:15px;
 margin-top:25px;
+border-style:none;
 `;
 
 
