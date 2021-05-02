@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
