@@ -52,7 +52,7 @@ html, body{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:600px;
+  grid-auto-rows:800px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -110,13 +110,13 @@ export default function HelloUser() {
       </div></div>
 
     <div className="left"><div>
-      <h1>What's going on nearby?</h1>
+      <h1>East Vancouver</h1>
         <EastVanImg/>
       </div></div>
 
     <div className="mid"><div>
   <h1>East Vancouver</h1>
-  <a class="twitter-timeline" data-width="500" data-height="600" href="https://twitter.com/CityofVancouver?ref_src=twsrc%5Etfw">Tweets by CityofVancouver</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a className="twitter-timeline" data-width="500" data-height="600" href="https://twitter.com/CityofVancouver?ref_src=twsrc%5Etfw">Tweets by CityofVancouver</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
       </div></div>
 
          </HelloUserCont>

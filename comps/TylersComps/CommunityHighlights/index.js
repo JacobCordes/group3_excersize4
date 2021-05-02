@@ -5,8 +5,8 @@ import {useRouter} from 'next/router';
 const ComHight = styled.div`
 
 background-image: url(van.png);
-width: 340px;
-height: 270px;
+width: 260px;
+height: 200px;
 border-radius:25px;
 background-size: 100% 100%;
 `;

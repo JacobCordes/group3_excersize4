@@ -46,7 +46,7 @@ html, body{
 .left{
     display:grid;
     grid-template-columns: 1fr;
-    grid-auto-rows:2400px;
+    grid-auto-rows:2500px;
     text-align:center;
     font-family:Martel Sans;
     color:white;

@@ -110,13 +110,13 @@ export default function HelloUser() {
       </div></div>
 
     <div className="left"><div>
-      <h1>What's going on nearby?</h1>
+      <h1>Kitsilano</h1>
         <KitsImg/>
       </div></div>
 
     <div className="mid"><div>
   <h1>Kitsilano</h1>
-  <a class="twitter-timeline" data-width="500" data-height="600" href="https://twitter.com/kitsilano?ref_src=twsrc%5Etfw">Tweets by kitsilano</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a className="twitter-timeline" data-width="500" data-height="600" href="https://twitter.com/kitsilano?ref_src=twsrc%5Etfw">Tweets by kitsilano</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
       </div></div>
 
          </HelloUserCont>
