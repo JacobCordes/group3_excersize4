@@ -10,6 +10,7 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
 import {useRouter} from 'next/router'
 import SmallLogo from '../comps/SmallLogo';
+import InfoIcon from '../comps/TrashLogComponents/InfoButton'
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -67,7 +68,7 @@ html, body{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1000px;
+  grid-auto-rows:1100px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -113,10 +114,14 @@ export default function Home() {
   <h1>What did you collect today?</h1>
 
   <TrashInputs />
-  <TrashInputs />
-  <TrashInputs />
-  <TrashInputs />
-
+  <InfoIcon />
+  <TrashInputs /> 
+  <InfoIcon />
+  <TrashInputs /> 
+  <InfoIcon />
+  <TrashInputs /> 
+  <InfoIcon />
+  
   <br></br> <br></br> <br></br>
 <RedButton/><br></br>
 <br></br>

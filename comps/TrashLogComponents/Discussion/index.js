@@ -85,8 +85,8 @@ const TrashInputs = ({
 
     const router = useRouter();
    return <CardDiv><DivCont>  
-       <Item>Cans</Item> 
        <Icon />
+       <Item>Cans</Item> 
        <Numbers>1</Numbers>
        <PlusButton>+</PlusButton>
        <MinusButton>-</MinusButton>
