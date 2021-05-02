@@ -51,7 +51,7 @@ html, body{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:540px;
+  grid-auto-rows:900px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -110,7 +110,7 @@ export default function Information() {
     <div className="left"><div>
       <h1>Community Highlights</h1>
       <ComHight />
-  
+      <a class="twitter-timeline" data-width="600" data-height="500" href="https://twitter.com/DailyHiveVan?ref_src=twsrc%5Etfw">Tweets by DailyHiveVan</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div></div>
 
     <div className="mid"><div>
@@ -118,6 +118,7 @@ export default function Information() {
 <InfoButton routeTo="/recyclingtips" text="Pro-Recycling Tips" /><br></br>
 <InfoButton routeTo="/composttips" text="The Best Compost Tips"/><br></br>
 <InfoButton routeTo="/ecofootprint" text="Minding Your Eco-Footprint"/>
+
       </div></div>
 
 
