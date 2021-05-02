@@ -133,9 +133,11 @@ flex-wrap:wrap;
 
 const SquareImages = ({
   bgcolor="#B2A68D"
-  
+
 }) =>{
+
   const router = useRouter();
+
   return <CardDiv>
         <WidgetDiv>
         <CardCont1 bg={bgcolor} onClick={()=>router.push("/confirm_stationery")}></CardCont1>

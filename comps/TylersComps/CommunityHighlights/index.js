@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import {useRouter} from 'next/router';
 
 const ComHight = styled.div`
 
@@ -22,9 +22,14 @@ align-items:center;
 
 
 
-const CommunityHighlights = () => {
+const CommunityHighlights = ({
+    routeTo="/"
 
-    return <CardDiv><ComHight>
+}) => {
+    
+    const router = useRouter();
+
+    return <CardDiv><ComHight onClick={()=>router.push(routeTo)}>
         
         </ComHight>
         </CardDiv>

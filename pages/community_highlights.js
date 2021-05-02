@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {useRouter} from 'next/router'
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
@@ -12,12 +11,14 @@ import Clock from '../comps/TylersComps/Clock';
 import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
 import NavBar from '../comps/NavBar/Nav';
-import ComHight from '../comps/TylersComps/CommunityHighlights';
 import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
+import EastVanImg from '../comps/NewsComps/EastVanComp';
+import StanleyParkNews from '../comps/NewsComps/NewsImgComp';
+import ComHight from '../comps/TylersComps/CommunityHighlights';
 
 
-const InformationCont = styled.div`
+const HelloUserCont = styled.div`
 
 html, body{
   margin:0px;
@@ -28,6 +29,7 @@ html, body{
   padding:0px;
   margin:0px;
 }
+
 
 .top{
   display:grid;
@@ -51,31 +53,34 @@ html, body{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:540px;
+  grid-auto-rows:600px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
-  justify-content:center;
   height:400px;
+  background:#9DBA94;
 }
 
 
 .left > div{
   background:white;
   padding:1em;
+  align-items:center;
 }
 
 .left > div:nth-child(odd){
-  background:#7297A0;
+    background:#9DBA94;
 }
 
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:540px;
+  grid-auto-rows:775px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
+  background:#9DBA94;
+  justify-content:center;
 }
 
 
@@ -95,40 +100,26 @@ html, body{
   }
 `;
 
-export default function Information() {
-
-  const router = useRouter();
-  return <InformationCont>
+export default function HelloUser() {
+  return <HelloUserCont>
  
 
-
     <div className="top"><div>
-    <SmallLogo />
+      <SmallLogo />
       <NavBar/>
       <h1 className="PageHead">Information</h1>
+      
       </div></div>
 
     <div className="left"><div>
       <h1>Community Highlights</h1>
-      <ComHight routeTo="/community_highlights"/>
+       
+        <a class="twitter-timeline" data-width="500" data-height="1000" href="https://twitter.com/CityofVancouver?ref_src=twsrc%5Etfw">Tweets by CityofVancouver</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div></div>
 
     <div className="mid"><div>
-  <h1>Discussion is Key</h1>
-<InfoButton routeTo="/recyclingtips" text="Pro-Recycling Tips" /><br></br>
-<InfoButton routeTo="/composttips" text="The Best Compost Tips"/><br></br>
-<InfoButton routeTo="/ecofootprint" text="Minding Your Eco-Footprint"/>
-
+  
       </div></div>
 
-
-         </InformationCont>
+         </HelloUserCont>
 }
-{
-  
-  
-  
-  /* <JacobButton text="Jacob's Button" bgcolor="#FAD"/>
-<KodiButton text="Kodi's Button" bgcolor="#856DBC" />
-<BonnieButton text="Bonnie's Button"/>
-<TylerButton/> */}
