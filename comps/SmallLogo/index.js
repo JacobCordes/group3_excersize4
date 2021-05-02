@@ -20,12 +20,6 @@ height: 0px;
 position:absolute;
 top:10;
 left:0;
-
-div:hover{
-  box-shadow: 0px 0px 0px 5px;
-}
-
-
 `
 
 
