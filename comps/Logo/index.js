@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 
 const LogoImg = styled.div`
@@ -18,14 +21,17 @@ justify-content:center;
 align-items:center;
 `
 
-const Logo = ({  
+const Logo = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1200});
+  }, []);
 
-}) =>{
-
-  return <CardDiv><LogoImg>
+  return ( 
+  <CardDiv data-aos="fade-in"><LogoImg>
 
   </LogoImg>
   </CardDiv>
-}
+  );
+};
 
 export default Logo

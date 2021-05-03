@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 const ImgDiv = styled.div`
 background-color:${props=>props.bg};
@@ -27,11 +30,12 @@ display:flex;
 justify-content:center;
 align-items:center;
 `
-  const EastVanImg = ({
-
-  }) =>{
+const EastVanImg = () => {
+  useEffect(() => {
+    Aos.init({ duration: 700});
+  }, []);
   
-    return <CardDiv>
+    return <CardDiv data-aos="fade-down">
         <ImgBorder>
       <ImgDiv></ImgDiv>
       </ImgBorder>

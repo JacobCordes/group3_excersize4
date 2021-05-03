@@ -8,6 +8,10 @@ import { useEffect } from 'react';
 
 const InfoButtonCont = styled.div`
 
+button:hover{
+    box-shadow: 2.5px 2.5px 6px #363636;
+    transition: 200ms linear;
+  }
 `
 
 const ButtonInput = styled.button`
@@ -18,6 +22,7 @@ height: 87px;
 font-size: 24px;
 border-radius: 20px;
 border: none;
+
 `
 
 

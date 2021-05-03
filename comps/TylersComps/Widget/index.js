@@ -132,6 +132,12 @@ justify-content:center;
 align-items:center;
 flex-direction:column;
 flex-wrap:wrap;
+
+div:hover{
+  box-shadow: 2.5px 2.5px 6px #363636;
+  transition: 200ms linear;
+}
+
 `
 
 
@@ -148,7 +154,7 @@ flex-wrap:wrap;
   return (
   <CardDiv>
         <WidgetDiv>
-        <CardCont1 data-aos="fade-right" onClick={()=>router.push("/stanleypark")}>Stanley Park</CardCont1>
+        <CardCont1 className="card1" data-aos="fade-right" onClick={()=>router.push("/stanleypark")}>Stanley Park</CardCont1>
         <CardCont2 data-aos="fade-right" onClick={()=>router.push("/granville_island")}>Granville Island</CardCont2>
         <CardCont3 data-aos="fade-right" onClick={()=>router.push("/kitsilano")}>Kitsilano</CardCont3>
 

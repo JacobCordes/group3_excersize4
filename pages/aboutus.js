@@ -107,8 +107,8 @@ export default function AboutUs() {
       </div></div>
 
     <div className="mid"><div>
-  <h2>My Waste is a web app project<br></br>
-created by Jacob Cordes,<br></br>Kodi de Castro, Tyler Do,<br></br>and Bonnie Dam for the Digital<br></br> Design and Development program at BCIT<br></br>
+  <h2>My Waste is a web app project
+created by <br></br>Jacob Cordes,<br></br>Kodi de Castro, Tyler Do,<br></br>and Bonnie Dam for the Digital Design and Development program at BCIT<br></br>
 
 
 <br></br>

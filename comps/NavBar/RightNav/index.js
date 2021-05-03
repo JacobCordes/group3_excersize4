@@ -17,6 +17,7 @@ li {
 
 li:hover{
     color:#54738E;
+    transition:200ms;
 }
 
 

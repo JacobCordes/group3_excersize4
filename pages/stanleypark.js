@@ -115,7 +115,6 @@ export default function HelloUser() {
       </div></div>
 
     <div className="mid"><div>
-  <h1>Stanley Park</h1>
   <a className="twitter-timeline" data-width="500px" data-height="600px" href="https://twitter.com/StanleyParkEco?ref_src=twsrc%5Etfw">Tweets by StanleyParkEco</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
       </div></div>
 

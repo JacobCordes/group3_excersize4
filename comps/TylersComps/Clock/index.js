@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 
 const ClockCont = styled.div`
@@ -22,11 +25,15 @@ align-items:center;
 
 
 const Clock = () => {
+    useEffect(() => {
+      Aos.init({ duration: 1500});
+    }, []);
 
-    return <CardDiv><ClockCont>
+    return (
+    <CardDiv data-aos="fade-in"><ClockCont>
     </ClockCont>
     </CardDiv>
-       
-}
+    );
+};
 
 export default Clock;
