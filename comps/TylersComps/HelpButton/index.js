@@ -20,9 +20,10 @@ const HelpButton = ({
     routeTo="/"
 }) => {
 
-    const router = useRouter()
-    return <HelpButtonCont>
-        <HelpInput onClick={()=>router.push(routeTo)}>?</HelpInput>
+    const router = useRouter();
+
+    return <HelpButtonCont onClick={()=>router.push(routeTo)}>
+        <HelpInput>?</HelpInput>
     </HelpButtonCont>
 }
 

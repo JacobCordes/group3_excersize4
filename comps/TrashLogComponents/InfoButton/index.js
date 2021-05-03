@@ -18,7 +18,7 @@ color:white;
 border-style: none;
 font-size:25px;
 text-align:center;
-jutsify-content:center;
+align-items: center;
 margin-left:-5px;
 margin-top:-126px;
 
@@ -37,12 +37,12 @@ margin-top:-5px;
 //----COMPONENT BUILDS----//
 
 const InfoIcon = ({
-   
-    
+    routeTo="/"
 }) => {
 
+const router = useRouter();
    
-   return <InfoCont>
+   return <InfoCont onClick={()=>router.push(routeTo)}>
        <Info>?</Info>
    </InfoCont>
 

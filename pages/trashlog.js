@@ -114,13 +114,13 @@ export default function Home() {
   <h1>What did you collect today?</h1>
 
   <TrashInputs />
-  <InfoIcon />
+  <InfoIcon routeTo="/helpcans"/>
   <TrashInputs /> 
-  <InfoIcon />
+  <InfoIcon routeTo="/helpbottles"/>
   <TrashInputs /> 
-  <InfoIcon />
+  <InfoIcon routeTo="/helpcardboard"/>
   <TrashInputs /> 
-  <InfoIcon />
+  <InfoIcon routeTo="/helpcompost"/>
   
   <br></br> <br></br> <br></br>
 <RedButton/><br></br>

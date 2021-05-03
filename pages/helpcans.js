@@ -77,7 +77,7 @@ export default function Home() {
       <div className="left"><div>
    <p>The best way to recycle your<br></br>cans is to sort them by size and<br></br>whether they are cans used for<br></br>alcohol or not.
 </p><br></br>
-<p>Sorting it allows you to bring it<br></br> to the bottle depot to get a <br></br>refund on your used cans!<br></br>So youy get some money from<br></br>them, and get a bonus from us!
+<p>Sorting it allows you to bring it<br></br> to the bottle depot to get a <br></br>refund on your used cans!<br></br>So you get some money from<br></br>them, and get a bonus from us!
 </p>
 <InfoButton routeTo="/trashlog" text="Go Back"/>
    </div></div>
