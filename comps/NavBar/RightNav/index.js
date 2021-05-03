@@ -8,6 +8,7 @@ const UL = styled.ul `
     list-style:none;
     display: flex;
     flex-flow:row nowrap;
+    z-index:1;
 
 
 li {
@@ -16,6 +17,7 @@ li {
 
 li:hover{
     color:#54738E;
+    transition:200ms;
 }
 
 

@@ -79,14 +79,15 @@ align-items:center;
 //----COMPONENT BUILDS----//
 
 const TrashInputs = ({
-    text="Looks Good!",
+    text="Cans",
+    
     
 }) => {
 
     const router = useRouter();
    return <CardDiv><DivCont>  
        <Icon />
-       <Item>Cans</Item> 
+       <Item>{text}</Item> 
        <Numbers>1</Numbers>
        <PlusButton>+</PlusButton>
        <MinusButton>-</MinusButton>

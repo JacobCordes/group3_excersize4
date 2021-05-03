@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
+
 //----COMPONENT STYLING----//
 
 
@@ -27,7 +28,6 @@ margin-top:-126px;
 
 const Info = styled.div `
 margin-left:10px;
-margin-top:-5px;
 `;
 
 

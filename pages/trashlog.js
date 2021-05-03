@@ -113,13 +113,13 @@ export default function Home() {
     <div className="mid"><div>
   <h1>What did you collect today?</h1>
 
-  <TrashInputs />
+  <TrashInputs text="Cans"/>
   <InfoIcon routeTo="/helpcans"/>
-  <TrashInputs /> 
+  <TrashInputs text="Bottles"/> 
   <InfoIcon routeTo="/helpbottles"/>
-  <TrashInputs /> 
+  <TrashInputs text="Cardboard"/> 
   <InfoIcon routeTo="/helpcardboard"/>
-  <TrashInputs /> 
+  <TrashInputs text="Organics"/> 
   <InfoIcon routeTo="/helpcompost"/>
   
   <br></br> <br></br> <br></br>

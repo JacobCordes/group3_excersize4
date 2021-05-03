@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 
 const ClockCont = styled.div`
@@ -13,7 +16,6 @@ align-items:center;
 `
 
 const CardDiv = styled.div`
-margin-bottom:20px;
 min-width:200px;
 min-height:150px;
 display:flex;
@@ -21,20 +23,17 @@ justify-content:center;
 align-items:center;
 `
 
-const Header = styled.h3`
-color:white;
-margin-top:340px;
-`;
-
-
 
 const Clock = () => {
+    useEffect(() => {
+      Aos.init({ duration: 1500});
+    }, []);
 
-    return <CardDiv><ClockCont>
-        <Header>It is 9:03 PM</Header>
+    return (
+    <CardDiv data-aos="fade-in"><ClockCont>
     </ClockCont>
     </CardDiv>
-       
-}
+    );
+};
 
 export default Clock;

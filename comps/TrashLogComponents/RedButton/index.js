@@ -9,7 +9,10 @@ import {useRouter} from 'next/router'
 
 
 const ButtonCont1 = styled.span `
-
+button:hover{
+    box-shadow: 2.5px 2.5px 6px #363636;
+    transition: 200ms linear;
+  }
 `;
 
 const Button = styled.button `

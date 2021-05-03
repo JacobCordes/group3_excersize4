@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 const ComHight = styled.div`
 
@@ -22,14 +25,14 @@ align-items:center;
 
 
 
-const CommunityHighlights = ({
-    routeTo="/"
-
-}) => {
+const CommunityHighlights = () => {
+    useEffect(() => {
+      Aos.init({ duration: 1500});
+    }, []);
     
     const router = useRouter();
 
-    return <CardDiv><ComHight onClick={()=>router.push(routeTo)}>
+    return <CardDiv data-aos="fade-in"><ComHight onClick={()=>router.push("/community_highlights")}>
         
         </ComHight>
         </CardDiv>

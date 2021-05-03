@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import React, {useState} from 'react';
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
@@ -12,6 +13,7 @@ import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
 import NavBar from '../comps/NavBar/Nav';
 import SmallLogo from '../comps/SmallLogo';
+import LiveClock from '../comps/LiveClock';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -107,6 +109,7 @@ export default function HelloUser() {
     <div className="left"><div>
       <h1>Good Morning.</h1>
         <Clock/>
+        <LiveClock />
       </div></div>
 
     <div className="mid"><div>

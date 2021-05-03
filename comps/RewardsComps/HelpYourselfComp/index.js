@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 const CardCont1 = styled.div`
   background-color:${props=>props.bg};
@@ -129,28 +132,34 @@ justify-content:center;
 align-items:center;
 flex-direction:column;
 flex-wrap:wrap;
+
+div:hover{
+  box-shadow: 2.5px 2.5px 6px #363636;
+  transition: 200ms linear;
+}
 `
-
-const SquareImages = ({
-  bgcolor="#B2A68D"
-
-}) =>{
+const SquareImages = () => {
+  useEffect(() => {
+    Aos.init({ duration: 850});
+  }, []);
 
   const router = useRouter();
 
-  return <CardDiv>
+  return (
+  <CardDiv>
         <WidgetDiv>
-        <CardCont1 bg={bgcolor} onClick={()=>router.push("/confirm_stationery")}></CardCont1>
-        <CardCont2 bg={bgcolor} onClick={()=>router.push("/confirm_cineplex")}></CardCont2>
-        <CardCont3 bg={bgcolor} onClick={()=>router.push("/confirm_grad")}></CardCont3>
+        <CardCont1 data-aos="fade-right" onClick={()=>router.push("/confirm_stationery")}>School Supplies</CardCont1>
+        <CardCont2 data-aos="fade-right" onClick={()=>router.push("/confirm_cineplex")}>Cineplex Movie Ticket</CardCont2>
+        <CardCont3 data-aos="fade-right" onClick={()=>router.push("/confirm_grad")}>Credit For Tuition</CardCont3>
 
-        <CardCont4 bg={bgcolor} onClick={()=>router.push("/confirm_fortnite")}></CardCont4>
-        <CardCont5 bg={bgcolor} onClick={()=>router.push("/confirm_bus")}></CardCont5>
-        <CardCont6 bg={bgcolor} onClick={()=>router.push("/confirm_books")}></CardCont6>
+        <CardCont4 data-aos="fade-left" onClick={()=>router.push("/confirm_fortnite")}>V-Bucks</CardCont4>
+        <CardCont5 data-aos="fade-left" onClick={()=>router.push("/confirm_bus")}>One-Day Bus pass</CardCont5>
+        <CardCont6 data-aos="fade-left" onClick={()=>router.push("/confirm_books")}>Random E-Book</CardCont6>
         </WidgetDiv>
   </CardDiv>
-  
-}
+  );  
+};
+
 
 
 export default SquareImages

@@ -14,6 +14,9 @@ import Widget from '../comps/TylersComps/Widget'
 import NavBar from '../comps/NavBar/Nav';
 import ComHight from '../comps/TylersComps/CommunityHighlights';
 import SmallLogo from '../comps/SmallLogo';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 

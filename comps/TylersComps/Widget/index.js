@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 const CardCont1 = styled.div`
   background-color:${props=>props.bg};
@@ -129,26 +132,41 @@ justify-content:center;
 align-items:center;
 flex-direction:column;
 flex-wrap:wrap;
+
+div:hover{
+  box-shadow: 2.5px 2.5px 6px #363636;
+  transition: 200ms linear;
+}
+
 `
 
-const Widget = ({
-  bgcolor="#B2A68D"
-  
-}) =>{
-  const router = useRouter();
-  return <CardDiv>
-        <WidgetDiv>
-        <CardCont1 bg={bgcolor} onClick={()=>router.push("/stanleypark")}>Stanley Park</CardCont1>
-        <CardCont2 bg={bgcolor} onClick={()=>router.push("/granville_island")}>Granville Island</CardCont2>
-        <CardCont3 bg={bgcolor} onClick={()=>router.push("/kitsilano")}>Kitsilano</CardCont3>
 
-        <CardCont4 bg={bgcolor} onClick={()=>router.push("/eastvan")}>East Vancouver</CardCont4>
-        <CardCont5 bg={bgcolor} onClick={()=>router.push("/victoria_fraserview")}>Victoria Fraserview</CardCont5>
-        <CardCont6 bg={bgcolor} onClick={()=>router.push("/scienceworld")}>Science World</CardCont6>
+// const Widget = ({
+//   bgcolor="#B2A68D"
+  
+// }) =>{
+
+  const Widget = () => {
+    useEffect(() => {
+      Aos.init({ duration: 850});
+    }, []);
+  const router = useRouter();
+  return (
+  <CardDiv>
+        <WidgetDiv>
+        <CardCont1 className="card1" data-aos="fade-right" onClick={()=>router.push("/stanleypark")}>Stanley Park</CardCont1>
+        <CardCont2 data-aos="fade-right" onClick={()=>router.push("/granville_island")}>Granville Island</CardCont2>
+        <CardCont3 data-aos="fade-right" onClick={()=>router.push("/kitsilano")}>Kitsilano</CardCont3>
+
+        <CardCont4 data-aos="fade-left" onClick={()=>router.push("/eastvan")}>East Vancouver</CardCont4>
+        <CardCont5 data-aos="fade-left" onClick={()=>router.push("/victoria_fraserview")}>Victoria Fraserview</CardCont5>
+        <CardCont6 data-aos="fade-left" onClick={()=>router.push("/scienceworld")}>Science World</CardCont6>
         </WidgetDiv>
   </CardDiv>
+
+  );
   
-}
+};
 
 
 export default Widget
