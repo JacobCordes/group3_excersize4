@@ -13,7 +13,6 @@ align-items:center;
 `
 
 const CardDiv = styled.div`
-margin-bottom:20px;
 min-width:200px;
 min-height:150px;
 display:flex;
@@ -21,17 +20,10 @@ justify-content:center;
 align-items:center;
 `
 
-const Header = styled.h3`
-color:white;
-margin-top:340px;
-`;
-
-
 
 const Clock = () => {
 
     return <CardDiv><ClockCont>
-        <Header>It is 9:03 PM</Header>
     </ClockCont>
     </CardDiv>
        

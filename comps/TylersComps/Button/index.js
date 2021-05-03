@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router'
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+
 
 const InfoButtonCont = styled.div`
 
@@ -16,9 +20,20 @@ border-radius: 20px;
 border: none;
 `
 
+
+// const InfoButton = ({
+//     text="Test Button",
+//     routeTo="/"
+
+    
+// }) => {
+
+
 const InfoButton = ({
     text="Test Button",
     routeTo="/"
+
+    
 }) => {
 
     const router = useRouter();
