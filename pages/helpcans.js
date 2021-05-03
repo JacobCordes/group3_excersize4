@@ -14,6 +14,7 @@ import Header from '../comps/Header';
 import NavBar from '../comps/NavBar/Nav';
 import Earth from '../comps/EarthPic';
 import SmallLogo from '../comps/SmallLogo';
+import ProgressBar from "react-scroll-progress-bar";
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -72,6 +73,7 @@ export default function Home() {
 
     <div className="top"><div>
    <h1>How do I<br></br>Recycle Cans?</h1>
+   <ProgressBar bgcolor="#54738E" height="15px" duration="1"/>
       </div></div>
 
       <div className="left"><div>
