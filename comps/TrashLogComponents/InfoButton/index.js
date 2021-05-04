@@ -21,13 +21,18 @@ font-size:25px;
 text-align:center;
 align-items: center;
 margin-left:-5px;
-margin-top:-126px;
+margin-top:-145px;
+
+
+
 
 `;
 
 
 const Info = styled.div `
 margin-left:10px;
+margin-top:5px;
+
 `;
 
 

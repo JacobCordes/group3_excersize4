@@ -24,6 +24,14 @@ html, body{
   padding:0px;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h1{
+  font-size:38px;
+}
+
 .top{
   display:grid;
   grid-template-columns: 1fr;

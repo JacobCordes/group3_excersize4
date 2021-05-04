@@ -9,6 +9,7 @@ const UL = styled.ul `
     display: flex;
     flex-flow:row nowrap;
     z-index:1;
+    font-family:'Martel Sans', sans-serif;
 
 
 li {

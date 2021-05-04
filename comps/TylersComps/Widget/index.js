@@ -18,6 +18,7 @@ const CardCont1 = styled.div`
   margin-bottom:20px;
   margin-right:5px;
   display:inline-flex;
+  font-family: 'Martel Sans', sans-serif;
   &>*{
     color:#FFF;
   }
@@ -37,6 +38,7 @@ const CardCont2 = styled.div`
   margin-bottom:20px;
   margin-right:5px;
   display:inline-flex;
+  font-family: 'Martel Sans', sans-serif;
   &>*{
     color:#FFF;
   }
@@ -55,6 +57,7 @@ const CardCont3 = styled.div`
   margin-bottom:20px;
   margin-right:5px;
   display:inline-flex;
+  font-family: 'Martel Sans', sans-serif;
   &>*{
     color:#FFF;
   }
@@ -73,6 +76,7 @@ const CardCont4 = styled.div`
   margin-bottom:20px;
   margin-right:5px;
   display:inline-flex;
+  font-family: 'Martel Sans', sans-serif;
   &>*{
     color:#FFF;
   }
@@ -91,6 +95,7 @@ const CardCont5 = styled.div`
   margin-bottom:20px;
   margin-right:5px;
   display:inline-flex;
+  font-family: 'Martel Sans', sans-serif;
   &>*{
     color:#FFF;
   }
@@ -109,6 +114,7 @@ const CardCont6 = styled.div`
   margin-bottom:20px;
   margin-right:5px;
   display:inline-flex;
+  font-family: 'Martel Sans', sans-serif;
   &>*{
     color:#FFF;
   }
@@ -121,6 +127,7 @@ min-height:540px;
 display:flex;
 justify-content:center;
 align-items:center;
+font-family: 'Martel Sans', sans-serif;
 
 `
 
@@ -132,6 +139,7 @@ justify-content:center;
 align-items:center;
 flex-direction:column;
 flex-wrap:wrap;
+font-family: 'Martel Sans', sans-serif;
 
 div:hover{
   box-shadow: 2.5px 2.5px 6px #363636;
