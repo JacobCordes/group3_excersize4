@@ -20,6 +20,7 @@ color:#FFF;
 width: 324px;
 height: 87px;
 font-size: 24px;
+font-family: 'Martel Sans', sans-serif;
 border-radius: 20px;
 border: none;
 

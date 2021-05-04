@@ -20,6 +20,14 @@ html, body{
   padding:0px;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h1{
+  font-size:42px;
+}
+
 .PageHead{
   padding:0px;
   margin:0px;
@@ -107,7 +115,7 @@ export default function AboutUs() {
       </div></div>
 
     <div className="mid"><div>
-  <h2>My Waste is a web app project
+  <p>My Waste is a web app project
 created by <br></br>Jacob Cordes,<br></br>Kodi de Castro, Tyler Do,<br></br>and Bonnie Dam for the Digital Design and Development program at BCIT<br></br>
 
 
@@ -117,7 +125,7 @@ created to promote
 awareness towards 
 littering and 
 climate change.
-</h2>
+</p>
       </div></div>
 
 

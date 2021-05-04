@@ -11,21 +11,22 @@ const DivCont = styled.button `
 display:flex;
 margin:5px;
 background-color:#7297A0;
-max-width:300px;
+max-width:375px;
 max-height:100px;
 border-radius:30px;
 color:white;
 border-style: none;
 `;
 
-const Icon = styled.img `
+const Icon = styled.div `
 background-image: url(bottles.png);
 height:63px;
 padding-left:45px;
 `;
 
-const Item = styled.h1 `
+const Item = styled.h2 `
 font-family:Martel Sans;
+font-size:28px;
 `;
 
 const Numbers = styled.button `
@@ -33,7 +34,7 @@ background-color:white;
 color:#54738E;
 text-align:center;
 border-radius:20px;
-font-size:35px;
+font-size:24px;
 font-family:Martel Sans;
 max-height:60px;
 max-width:50px;
@@ -80,17 +81,21 @@ align-items:center;
 
 const TrashInputs = ({
     text="Cans",
+    number="0",
+    plus="+",
+    minus="-",
+    bgimage="bottles.png"
     
     
 }) => {
 
     const router = useRouter();
    return <CardDiv><DivCont>  
-       <Icon />
+       <Icon></Icon>
        <Item>{text}</Item> 
-       <Numbers>1</Numbers>
-       <PlusButton>+</PlusButton>
-       <MinusButton>-</MinusButton>
+       <Numbers>{number}</Numbers>
+       <PlusButton>{plus}</PlusButton>
+       <MinusButton>{minus}</MinusButton>
        </DivCont>
        </CardDiv>
 }

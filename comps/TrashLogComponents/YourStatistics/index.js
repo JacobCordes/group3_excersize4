@@ -17,6 +17,7 @@ width: 324px;
 height: 87px;
 font-size: 24px;
 border: none;
+font-family: 'Martel Sans', sans-serif
 `
 
 const DailyTrash = ({

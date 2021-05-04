@@ -24,6 +24,14 @@ html, body{
   padding:0px;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h1{
+  font-size:38px;
+}
+
 .top{
   display:grid;
   grid-template-columns: 1fr;
@@ -53,7 +61,7 @@ export default function Home() {
   
 
     <div className="top"><div>
-    <br></br><br></br><br></br><br></br><br></br><br></br><h1>Awesome!</h1>
+    <br></br><br></br><h1>Awesome!</h1>
   <h3>You've helped collect<br></br>4 pieces of trash</h3><br></br>
 <Earth />
   <h3>You've Earned<br></br>4 Points!</h3>

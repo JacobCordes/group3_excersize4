@@ -11,6 +11,7 @@ top:20px;
 right:10px;
 z-index: 20;
 display: none;
+font-family:'Martel Sans', sans-serif;
 
 @media (max-width: 768px) {
     display:flex;
