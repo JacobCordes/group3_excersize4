@@ -72,7 +72,7 @@ export default function Home() {
   <h3>Total 4 items<br></br>Collected</h3><br></br><br></br><br></br>
   <RedButton routeTo="/trashlog"text="Nope."/><br></br>
 <br></br>
-<GreenButton routeTo="/collectedtrash"text="Yeah!"/>
+<GreenButton routeTo="/collectedtrash" text="Yeah!"/>
       </div></div>
 
 
