@@ -25,7 +25,12 @@ import 'reactjs-popup/dist/index.css';
 // margin-left:-5px;
 // margin-top:-145px;
 
+const Margins = styled.div `
+margin-right:305px;
+margin-bottom:530px;
+position:absolute;
 
+`;
 
 
 // `;
@@ -48,7 +53,7 @@ const InfoIcon1 = ({
 }) => {
 
    
-   return <Popup
+   return <Margins><Popup
    trigger={<button className="button"> ? </button>}
    modal
    nested
@@ -72,6 +77,7 @@ Sorting it allows you to bring it to the bottle depot to get a refund on your us
      </div>
    )}
  </Popup>
+ </Margins>
 }
 
 

@@ -25,7 +25,12 @@ import 'reactjs-popup/dist/index.css';
 // margin-left:-5px;
 // margin-top:-145px;
 
+const Margins = styled.div `
+margin-right:350px;
+margin-top:375px;
+position:absolute;
 
+`;
 
 
 // `;
@@ -50,7 +55,7 @@ const InfoIcon4 = ({
 }) => {
 
    
-   return <Popup
+   return <Margins><Popup
    trigger={<button className="button"> ? </button>}
    modal
    nested
@@ -80,6 +85,7 @@ const InfoIcon4 = ({
      </div>
    )}
  </Popup>
+ </Margins>
 }
 
 

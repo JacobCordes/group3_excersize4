@@ -3,6 +3,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
+import GreenButton from '../GreenButton';
+import RedButton from '../RedButton';
+import InfoIcon1 from '../InfoButton1';
+import InfoIcon2 from '../InfoButton2';
+import InfoIcon3 from '../InfoButton3';
+import InfoIcon4 from '../InfoButton4';
 
 //----COMPONENT STYLING----//
 
@@ -22,6 +28,24 @@ const Icon = styled.div `
 background-image: url(Can.png);
 height:53px;
 padding-left:45px;
+`;
+
+const Icon2 = styled.div `
+background-image: url(Bottles.png);
+height:63px;
+padding-left:45px;
+`;
+
+const Icon3 = styled.div `
+background-image: url(Cardboard.png);
+height:43px;
+padding-left:51px;
+`;
+
+const Icon4 = styled.div `
+background-image: url(DeadFish.png);
+height:58px;
+padding-left:48px;
 `;
 
 const Item = styled.h2 `
@@ -68,7 +92,8 @@ margin:20px;
 `;
 
 const CardDiv = styled.div`
-
+display:flex;
+flex-direction:column;
 min-width:200px;
 min-height:150px;
 display:flex;
@@ -78,7 +103,7 @@ align-items:center;
 
 .Inputs{
    font-size:54px;
-   width:150px;
+   width:140px;
    border-radius:20px;
    color:white;
    margin-top:9px;
@@ -86,7 +111,48 @@ align-items:center;
    text-align:center;
    background-color:#54738E;
    border:none;
+
 }
+       .soundsGood{
+           
+        background-color:#82B687;
+border:none;
+border-radius: 20px;
+width:237px;
+height:72px;
+color:white;
+box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
+font-family: 'Martel Sans';
+line-height:25px;
+font-size:36px;
+text-align:center;
+       }
+
+       .soundsGood:hover{
+        box-shadow: 2.5px 2.5px 6px #363636;
+        transition: 200ms linear;
+       }
+
+       .Reset{
+           
+        background-color:#D49595;
+border:none;
+border-radius: 20px;
+width:180px;
+height:72px;
+color:white;
+box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
+font-family: 'Martel Sans';
+line-height:25px;
+font-size:36px;
+text-align:center;
+       }
+
+       .Reset:hover{
+        box-shadow: 2.5px 2.5px 6px #363636;
+        transition: 200ms linear;
+       }
+
 
 `
 
@@ -100,29 +166,93 @@ const TrashInputs = ({
     number="0",
     plus="+",
     minus="-",
-    bgimage="bottles.png"
-    
+    bgimage="bottles.png",
+    routeTo="/"
     
 }) => {
 
     const router = useRouter();
 
-    function canData() {
+    function trashData() {
         var input = document.getElementById("Inputs1").value;
         sessionStorage.setItem("cans", input)
-        alert(input);
+
+        var input2 = document.getElementById("Inputs2").value;
+        sessionStorage.setItem("bottles", input2)
+
+        var input3 = document.getElementById("Inputs3").value;
+        sessionStorage.setItem("cardboard", input3)
+
+        var input4 = document.getElementById("Inputs4").value;
+        sessionStorage.setItem("organics", input4)
+      
     }
+
+    
+
+    function Reset(){
+
+        let btnClear = document.getElementById("reset");
+        let inputs = document.querySelectorAll("input");
+    
+        btnClear.addEventListener('click', () => {
+                inputs.forEach(input => input.value = '');
+        });
+        
+    }
+
+    // function Reset(){
+    //     document.getElementById("Inputs1").reset;
+    //     document.getElementById("Inputs2").reset;
+    //     document.getElementById("Inputs3").reset;
+    //     document.getElementById("Inputs4").reset;
+    // }
+
 
 
 
 
    return <CardDiv>
+       <InfoIcon1></InfoIcon1>
        <DivCont>  
        <Icon></Icon>
        <Item>{text}</Item> 
        <input  placeholder="0" id="Inputs1" className="Inputs" type="text"></input>
-       <input onClick={canData} type="submit"></input>
+       {/* <input onClick={canData} type="submit"></input> */}
        </DivCont>
+<br></br><br></br>
+<InfoIcon2></InfoIcon2>
+       <DivCont>  
+       <Icon2></Icon2>
+       <Item>Bottles</Item> 
+       <input  placeholder="0" id="Inputs2" className="Inputs" type="text"></input>
+       
+       </DivCont>
+
+       <br></br><br></br>
+           <InfoIcon3></InfoIcon3>
+       <DivCont>  
+       <Icon3></Icon3>
+       <Item>Cardboard</Item> 
+       <input  placeholder="0" id="Inputs3" className="Inputs" type="text"></input>
+      
+       </DivCont>
+
+       <br></br><br></br>
+       <InfoIcon4></InfoIcon4>
+       <DivCont>  
+       <Icon4></Icon4>
+       <Item>Organics</Item> 
+       <input  placeholder="0" id="Inputs4" className="Inputs" type="text"></input>
+    
+
+
+       </DivCont>
+<br></br><br></br>
+
+<input onClick={Reset} type="reset" id="reset" className="Reset"></input><br></br>
+       <input onMouseOver={trashData} onClick={()=>router.push("/isthisright")} type="submit" className="soundsGood"></input>
+
 
        </CardDiv>
 

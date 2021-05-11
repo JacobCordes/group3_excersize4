@@ -136,15 +136,7 @@ export default function Home() {
     <div className="mid"><div>
   <h1>What did you collect today?</h1>
 
-
   <TrashInputs className="Input" text="Cans"/>
-  <InfoIcon1 routeTo="/helpcans"/>
-  <TrashInputs2 text="Bottles"/> 
-  <InfoIcon2 routeTo="/helpbottles"/>
-  <TrashInputs3 text="Cardboard"/> 
-  <InfoIcon3 routeTo="/helpcardboard"/>
-  <TrashInputs4 text="Organics"/> 
-  <InfoIcon4 routeTo="/helpcompost"/>
 
 
 
@@ -152,9 +144,9 @@ export default function Home() {
   
   
   <br></br> <br></br> <br></br>
-<RedButton/><br></br>
+{/* <RedButton/><br></br> */}
 <br></br>
-<GreenButton routeTo="/isthisright"/>
+{/* <GreenButton routeTo="/isthisright"/> */}
       </div></div>
          </HomeCont>
 }

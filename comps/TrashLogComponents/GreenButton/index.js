@@ -41,7 +41,7 @@ const GreenButton = ({
     routeTo="/"
 }) => {
 
-    const router = useRouter();
+
    return <ButtonCont1 onClick={()=>router.push(routeTo)}>       
        <Button>
            <ButtonText1>{text}</ButtonText1>
