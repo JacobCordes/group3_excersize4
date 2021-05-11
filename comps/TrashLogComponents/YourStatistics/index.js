@@ -21,10 +21,12 @@ font-family: 'Martel Sans', sans-serif
 `
 
 const DailyTrash = ({
-    text="Daily Trash Collected: 3"
+    text="Daily Trash Collected: 0"
 }) => {
 
-   
+//    function getData(){
+//        var input = sessionStorage.getItem("cans")
+//    }
 
     return <InfoButtonCont >
         <ButtonInput>{text}</ButtonInput>

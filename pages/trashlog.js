@@ -2,7 +2,10 @@ import styled from 'styled-components';
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/Discussion';
+import TrashInputs from '../comps/TrashLogComponents/TrashInputs';
+import TrashInputs2 from '../comps/TrashLogComponents/TrashInputs2';
+import TrashInputs3 from '../comps/TrashLogComponents/TrashInputs3';
+import TrashInputs4 from '../comps/TrashLogComponents/TrashInputs4';
 import Points from '../comps/RewardsComps/PointsComp';
 import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
@@ -14,6 +17,8 @@ import InfoIcon1 from '../comps/TrashLogComponents/InfoButton1'
 import InfoIcon2 from '../comps/TrashLogComponents/InfoButton2'
 import InfoIcon3 from '../comps/TrashLogComponents/InfoButton3'
 import InfoIcon4 from '../comps/TrashLogComponents/InfoButton4'
+
+
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -102,9 +107,16 @@ h1{
   }
 `;
 
-export default function Home() {
-  const router = useRouter();
 
+
+
+export default function Home() {
+
+
+  
+
+  const router = useRouter();
+  
   return <HomeCont>
   
 
@@ -117,21 +129,27 @@ export default function Home() {
     <div className="left"><div>
       <h1>Your Statistics</h1>
   <DailyTrash/><br></br>
-  <DailyTrash text="Weekly Trash Collected: 27"/><br></br>
-  <DailyTrash text="Weekly Trash Goal: 40"/><br></br>
+  <DailyTrash text="Weekly Trash Collected: 0"/><br></br>
+  <DailyTrash text="Weekly Trash Goal: 25"/><br></br>
       </div></div>
 
     <div className="mid"><div>
   <h1>What did you collect today?</h1>
 
-  <TrashInputs text="Cans"/>
+
+  <TrashInputs className="Input" text="Cans"/>
   <InfoIcon1 routeTo="/helpcans"/>
-  <TrashInputs text="Bottles"/> 
+  <TrashInputs2 text="Bottles"/> 
   <InfoIcon2 routeTo="/helpbottles"/>
-  <TrashInputs text="Cardboard"/> 
+  <TrashInputs3 text="Cardboard"/> 
   <InfoIcon3 routeTo="/helpcardboard"/>
-  <TrashInputs text="Organics"/> 
+  <TrashInputs4 text="Organics"/> 
   <InfoIcon4 routeTo="/helpcompost"/>
+
+
+
+
+  
   
   <br></br> <br></br> <br></br>
 <RedButton/><br></br>
