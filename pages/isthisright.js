@@ -2,7 +2,10 @@ import styled from 'styled-components';
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/Discussion';
+import TrashInputs from '../comps/TrashLogComponents/TrashInputs';
+import TrashInputs2 from '../comps/TrashLogComponents/TrashInputs2';
+import TrashInputs3 from '../comps/TrashLogComponents/TrashInputs3';
+import TrashInputs4 from '../comps/TrashLogComponents/TrashInputs4';
 import Points from '../comps/RewardsComps/PointsComp';
 import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
@@ -69,7 +72,7 @@ export default function Home() {
   <h3>Total 4 items<br></br>Collected</h3><br></br><br></br><br></br>
   <RedButton routeTo="/trashlog"text="Nope."/><br></br>
 <br></br>
-<GreenButton routeTo="/collectedtrash"text="Yeah!"/>
+<GreenButton routeTo="/collectedtrash" text="Yeah!"/>
       </div></div>
 
 

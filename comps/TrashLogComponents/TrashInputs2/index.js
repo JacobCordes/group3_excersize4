@@ -29,18 +29,20 @@ font-family:Martel Sans;
 font-size:28px;
 `;
 
-const Numbers = styled.button `
-background-color:white;
-color:#54738E;
-text-align:center;
-border-radius:20px;
-font-size:24px;
-font-family:Martel Sans;
-max-height:60px;
-max-width:50px;
-margin-left:15px;
-margin-top:25px;
-border-style:none;
+const Numbers = styled.div `
+// background-color:white;
+// color:#54738E;
+// text-align:center;
+// border-radius:20px;
+// font-size:24px;
+// font-family:Martel Sans;
+// max-height:60px;
+// width:60px;
+// height:60px;
+// max-width:50px;
+// margin-left:15px;
+// margin-top:25px;
+// border-style:none;
 `;
 
 
@@ -72,6 +74,20 @@ min-height:150px;
 display:flex;
 justify-content:center;
 align-items:center;
+
+
+.Inputs{
+   font-size:54px;
+   width:150px;
+   border-radius:20px;
+   color:white;
+   margin-top:9px;
+   margin-left:15px;
+   text-align:center;
+   background-color:#54738E;
+   border:none;
+}
+
 `
 
 
@@ -79,7 +95,7 @@ align-items:center;
 
 //----COMPONENT BUILDS----//
 
-const TrashInputs = ({
+const TrashInputs2 = ({
     text="Cans",
     number="0",
     plus="+",
@@ -90,18 +106,30 @@ const TrashInputs = ({
 }) => {
 
     const router = useRouter();
-   return <CardDiv><DivCont>  
+
+    function bottlesData() {
+        var input2 = document.getElementById("Inputs2").value;
+        sessionStorage.setItem("bottles", input2)
+        alert(input2);
+    }
+
+
+
+   return <CardDiv>
+       <DivCont>  
        <Icon></Icon>
        <Item>{text}</Item> 
-       <Numbers>{number}</Numbers>
-       <PlusButton>{plus}</PlusButton>
-       <MinusButton>{minus}</MinusButton>
+       <input  placeholder="0" id="Inputs2" className="Inputs" type="text"></input>
+       <input onClick={bottlesData} type="submit"></input>
        </DivCont>
+
        </CardDiv>
+
+       
 }
 
 
 
 //----EXPORTS----//
 
-export default TrashInputs
+export default TrashInputs2

@@ -2,7 +2,10 @@ import styled from 'styled-components';
 import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
 import GreenButton from '../comps/TrashLogComponents/GreenButton';
 import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/Discussion';
+import TrashInputs from '../comps/TrashLogComponents/TrashInputs';
+import TrashInputs2 from '../comps/TrashLogComponents/TrashInputs2';
+import TrashInputs3 from '../comps/TrashLogComponents/TrashInputs3';
+import TrashInputs4 from '../comps/TrashLogComponents/TrashInputs4';
 import Points from '../comps/RewardsComps/PointsComp';
 import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
@@ -10,7 +13,12 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
 import {useRouter} from 'next/router'
 import SmallLogo from '../comps/SmallLogo';
-import InfoIcon from '../comps/TrashLogComponents/InfoButton'
+import InfoIcon1 from '../comps/TrashLogComponents/InfoButton1'
+import InfoIcon2 from '../comps/TrashLogComponents/InfoButton2'
+import InfoIcon3 from '../comps/TrashLogComponents/InfoButton3'
+import InfoIcon4 from '../comps/TrashLogComponents/InfoButton4'
+
+
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -99,9 +107,16 @@ h1{
   }
 `;
 
-export default function Home() {
-  const router = useRouter();
 
+
+
+export default function Home() {
+
+
+  
+
+  const router = useRouter();
+  
   return <HomeCont>
   
 
@@ -114,26 +129,24 @@ export default function Home() {
     <div className="left"><div>
       <h1>Your Statistics</h1>
   <DailyTrash/><br></br>
-  <DailyTrash text="Weekly Trash Collected: 27"/><br></br>
-  <DailyTrash text="Weekly Trash Goal: 40"/><br></br>
+  <DailyTrash text="Weekly Trash Collected: 0"/><br></br>
+  <DailyTrash text="Weekly Trash Goal: 25"/><br></br>
       </div></div>
 
     <div className="mid"><div>
   <h1>What did you collect today?</h1>
 
-  <TrashInputs text="Cans"/>
-  <InfoIcon routeTo="/helpcans"/>
-  <TrashInputs text="Bottles"/> 
-  <InfoIcon routeTo="/helpbottles"/>
-  <TrashInputs text="Cardboard"/> 
-  <InfoIcon routeTo="/helpcardboard"/>
-  <TrashInputs text="Organics"/> 
-  <InfoIcon routeTo="/helpcompost"/>
+  <TrashInputs className="Input" text="Cans"/>
+
+
+
+
+  
   
   <br></br> <br></br> <br></br>
-<RedButton/><br></br>
+{/* <RedButton/><br></br> */}
 <br></br>
-<GreenButton routeTo="/isthisright"/>
+{/* <GreenButton routeTo="/isthisright"/> */}
       </div></div>
          </HomeCont>
 }
