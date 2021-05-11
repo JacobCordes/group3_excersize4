@@ -10,7 +10,10 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
 import {useRouter} from 'next/router'
 import SmallLogo from '../comps/SmallLogo';
-import InfoIcon from '../comps/TrashLogComponents/InfoButton'
+import InfoIcon1 from '../comps/TrashLogComponents/InfoButton1'
+import InfoIcon2 from '../comps/TrashLogComponents/InfoButton2'
+import InfoIcon3 from '../comps/TrashLogComponents/InfoButton3'
+import InfoIcon4 from '../comps/TrashLogComponents/InfoButton4'
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -122,13 +125,13 @@ export default function Home() {
   <h1>What did you collect today?</h1>
 
   <TrashInputs text="Cans"/>
-  <InfoIcon routeTo="/helpcans"/>
+  <InfoIcon1 routeTo="/helpcans"/>
   <TrashInputs text="Bottles"/> 
-  <InfoIcon routeTo="/helpbottles"/>
+  <InfoIcon2 routeTo="/helpbottles"/>
   <TrashInputs text="Cardboard"/> 
-  <InfoIcon routeTo="/helpcardboard"/>
+  <InfoIcon3 routeTo="/helpcardboard"/>
   <TrashInputs text="Organics"/> 
-  <InfoIcon routeTo="/helpcompost"/>
+  <InfoIcon4 routeTo="/helpcompost"/>
   
   <br></br> <br></br> <br></br>
 <RedButton/><br></br>

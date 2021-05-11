@@ -1,13 +1,74 @@
 html, body{
-    margin:0px;
-    padding:0px;
-    overflow:scroll;
-  }
+  margin:0px;
+  padding:0px;
+  overflow:scroll;
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-  @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
-
-  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
+.modal {
+  font-size: 12px;
+  background: #000;
+  background-color:#A88C7D;
+}
+.modal > .header {
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 5px;
+  font-family:'Rajdhani', sans-serif;
+  color:white;
   
+}
+.modal > .content {
+  width: 95%;
+  padding: 10px 5px;
+  font-family:'Martel Sans', sans-serif;
+  color:white;
+  font-size:14px;
+  text-align: center;
+}
+
+
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+  
+  
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+   background-color:#A88C7D;
+}
+
+.button{
+  display:flex;
+  position:absolute;
+  background-color:#7297A0;
+  width:30px;
+  height:30px;
+  border-radius:30px;
+  color:white;
+  border-style: none;
+  font-size:25px;
+  text-align:center;
+  align-items: center;
+  margin-left:-5px;
+  margin-top:-145px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
