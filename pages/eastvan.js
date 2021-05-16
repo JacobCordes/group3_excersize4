@@ -18,6 +18,7 @@ import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
 import EastVanImg from '../comps/NewsComps/EastVanComp';
 import StanleyParkNews from '../comps/NewsComps/NewsImgComp';
+import EastVanLive from '../comps/ReactTwitterComps/EastVanLiveComp';
 
 
 const HelloUserCont = styled.div`
@@ -126,7 +127,7 @@ export default function HelloUser() {
       </div></div>
 
     <div className="mid"><div>
-  <a className="twitter-timeline" data-width="500" data-height="600" href="https://twitter.com/CityofVancouver?ref_src=twsrc%5Etfw">Tweets by CityofVancouver</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+    <EastVanLive/>
       </div></div>
 
          </HelloUserCont>
