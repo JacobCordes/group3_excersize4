@@ -18,6 +18,7 @@ import SmallLogo from '../comps/SmallLogo';
 // import  from '../comps/TrashLogComponents/Discussion';
 import VicFraserviewImg from '../comps/NewsComps/VicFraserviewComp';
 import StanleyParkNews from '../comps/NewsComps/NewsImgComp';
+import VicFraserLive from '../comps/ReactTwitterComps/VicFraserLiveComp'
 
 
 const HelloUserCont = styled.div`
@@ -126,7 +127,8 @@ export default function HelloUser() {
       </div></div>
 
     <div className="mid"><div>
-  <a className="twitter-timeline" data-width="500" data-height="600" href="https://twitter.com/NEWS1130?ref_src=twsrc%5Etfw">Tweets by NEWS1130</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+    <h1>What's Going on Nearby?</h1>
+  <VicFraserLive/>
       </div></div>
 
          </HelloUserCont>

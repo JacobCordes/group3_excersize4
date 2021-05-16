@@ -19,6 +19,10 @@ import SmallLogo from '../comps/SmallLogo';
 import EastVanImg from '../comps/NewsComps/EastVanComp';
 import StanleyParkNews from '../comps/NewsComps/NewsImgComp';
 import ComHight from '../comps/TylersComps/CommunityHighlights';
+import ProfileSmaller from '../comps/ReactTwitterComps/community_highlights';
+
+
+
 
 
 const HelloUserCont = styled.div`
@@ -122,11 +126,15 @@ export default function HelloUser() {
       
       </div></div>
 
-    <div className="left"><div>
-      <h1>Community Highlights</h1>
+    <div className="left">
+      <div>
+        <h1>Community Highlights</h1>
        
-        <a class="twitter-timeline" data-width="500" data-height="1000" href="https://twitter.com/CityofVancouver?ref_src=twsrc%5Etfw">Tweets by CityofVancouver</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div></div>
+        <ProfileSmaller/>
+      
+      </div>
+      
+      </div>
 
     <div className="mid"><div>
   
