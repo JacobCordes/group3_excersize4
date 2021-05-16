@@ -127,6 +127,7 @@ export default function HelloUser() {
       </div></div>
 
     <div className="mid"><div>
+    <h1>What's Going on Nearby?</h1>
     <EastVanLive/>
       </div></div>
 

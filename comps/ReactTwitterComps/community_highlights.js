@@ -6,7 +6,7 @@ export const ProfileSmaller = ({
 }) => {
     return <Timeline
       dataSource={{ sourceType: "profile", screenName: "cityofvancouver" }}
-      options={{ width: "310", height: "600" }}
+      options={{ width: "310", height: "1000" }}
     />
   };
 
