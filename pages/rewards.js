@@ -13,6 +13,7 @@ import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
 import SmallLogo from '../comps/SmallLogo';
+import TotalPoints from '../comps/TrashLogComponents/TotalPoints';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -58,7 +59,7 @@ h1{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:200px;
+  grid-auto-rows:275px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -112,7 +113,7 @@ export default function Rewards() {
       </div></div>
 
     <div className="left"><div><br></br>
-   <DailyTrash text="Your Total Points: 89" />
+<TotalPoints />
 
       </div></div>
 

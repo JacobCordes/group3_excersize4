@@ -27,7 +27,7 @@ h1{
 }
 `
 
-const DailyTrash = () => {
+const TotalPoints = () => {
     useEffect(() => {
       Aos.init({ duration: 2000});
     }, []);
@@ -57,7 +57,7 @@ const DailyTrash = () => {
 //    }
 
     return <InfoButtonCont >
-        <ButtonInput data-aos="slide-right" onClick={dailyCollected}><p>Daily Trash Collected:</p><h1 id="collected"> </h1></ButtonInput>
+        <ButtonInput data-aos="slide-up" onClick={dailyCollected}><p>Your Total Points:</p><h1 id="collected"> </h1></ButtonInput>
     </InfoButtonCont>
 }
 
@@ -65,4 +65,4 @@ const DailyTrash = () => {
 
 //----EXPORTS----//
 
-export default DailyTrash
+export default TotalPoints
