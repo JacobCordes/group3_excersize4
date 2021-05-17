@@ -16,6 +16,12 @@ import Widget from '../comps/TylersComps/Widget'
 import Header from '../comps/Header';
 import NavBar from '../comps/NavBar/Nav';
 import SmallLogo from '../comps/SmallLogo';
+import Tutorial1 from '../comps/Tutorial/1';
+import Tutorial2 from '../comps/Tutorial/2';
+import Tutorial3 from '../comps/Tutorial/3';
+import Tutorial4 from '../comps/Tutorial/4';
+import TutorialText from '../comps/Tutorial/Text';
+import SmallText from '../comps/Tutorial/SmallText';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -29,7 +35,7 @@ html, body{
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1000px;
+  grid-auto-rows:1900px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -55,17 +61,19 @@ export default function Home() {
   
 
     <div className="top"><div>
-      {/* <nav><ui>
-        <li><a href="">Home</a></li>
-        <li><a href="#">Information</a></li>
-        <li><a href="#">Trash Log</a></li>
-        <li><a href="#">Rewards</a></li>
-        <li><a href="#">About Us</a></li>
-        </ui>
-        </nav> */}
-    
+     <TutorialText text="How to use MyWaste!"/>
+     <br></br>
+     <SmallText text="#1 Pick Up Trash" />
+    <Tutorial1 />
+    <SmallText text="#2 Recycle or Find a Trash Can" />
+    <Tutorial2 />
+    <SmallText text="#3 Input What You Collected" />
+    <Tutorial3 />
+    <SmallText text="#4 Get Rewards!" />
+    <Tutorial4 /> <br></br><br></br>
+    <GreenButton text="Try Now!" routeTo="/hellouser"/>
         <br></br><br></br><br></br>
-        <Header />
+      
       </div></div>
 
 
