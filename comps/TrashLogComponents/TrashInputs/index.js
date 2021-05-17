@@ -9,6 +9,9 @@ import InfoIcon1 from '../InfoButton1';
 import InfoIcon2 from '../InfoButton2';
 import InfoIcon3 from '../InfoButton3';
 import InfoIcon4 from '../InfoButton4';
+import { useEffect } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 //----COMPONENT STYLING----//
 
@@ -161,15 +164,10 @@ text-align:center;
 
 //----COMPONENT BUILDS----//
 
-const TrashInputs = ({
-    text="Cans",
-    number="0",
-    plus="+",
-    minus="-",
-    bgimage="bottles.png",
-    routeTo="/"
-    
-}) => {
+const TrashInputs = () => {
+    useEffect(() => {
+      Aos.init({ duration: 1500});
+    }, []);
 
     const router = useRouter();
 
@@ -185,10 +183,12 @@ const TrashInputs = ({
 
         var input4 = document.getElementById("Inputs4").value;
         sessionStorage.setItem("organics", input4)
+
+      
       
     }
-
     
+
 
     function Reset(){
 
@@ -201,12 +201,6 @@ const TrashInputs = ({
         
     }
 
-    // function Reset(){
-    //     document.getElementById("Inputs1").reset;
-    //     document.getElementById("Inputs2").reset;
-    //     document.getElementById("Inputs3").reset;
-    //     document.getElementById("Inputs4").reset;
-    // }
 
 
 
@@ -214,15 +208,14 @@ const TrashInputs = ({
 
    return <CardDiv>
        <InfoIcon1></InfoIcon1>
-       <DivCont>  
+       <DivCont data-aos="flip-up">  
        <Icon></Icon>
-       <Item>{text}</Item> 
+       <Item>Cans</Item> 
        <input  placeholder="0" id="Inputs1" className="Inputs" type="text"></input>
-       {/* <input onClick={canData} type="submit"></input> */}
        </DivCont>
 <br></br><br></br>
-<InfoIcon2></InfoIcon2>
-       <DivCont>  
+        <InfoIcon2 data-aos="flip-up"/>
+       <DivCont data-aos="flip-up">  
        <Icon2></Icon2>
        <Item>Bottles</Item> 
        <input  placeholder="0" id="Inputs2" className="Inputs" type="text"></input>
@@ -231,7 +224,7 @@ const TrashInputs = ({
 
        <br></br><br></br>
            <InfoIcon3></InfoIcon3>
-       <DivCont>  
+       <DivCont data-aos="flip-up">  
        <Icon3></Icon3>
        <Item>Cardboard</Item> 
        <input  placeholder="0" id="Inputs3" className="Inputs" type="text"></input>
@@ -240,7 +233,7 @@ const TrashInputs = ({
 
        <br></br><br></br>
        <InfoIcon4></InfoIcon4>
-       <DivCont>  
+       <DivCont data-aos="flip-up">  
        <Icon4></Icon4>
        <Item>Organics</Item> 
        <input  placeholder="0" id="Inputs4" className="Inputs" type="text"></input>

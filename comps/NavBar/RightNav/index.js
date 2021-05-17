@@ -21,6 +21,25 @@ li:hover{
     transition:200ms;
 }
 
+.trash{
+    background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+-webkit-background-clip: text;
+background-clip: text;
+color:white;
+
+animation:
+             glow 2500ms linear infinite 2000ms;
+
+  
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+}  
+
+
 
 @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -49,10 +68,10 @@ const RightNav = ({ open }) => {
 
    return  <UL open={open}>
            <li onClick={()=>router.push("/hellouser")}>Home</li>
-           <li onClick={()=>router.push("/information")}>Information</li>
-           <li onClick={()=>router.push("/trashlog")}>Trash Log</li>
+           <li className="trash" onClick={()=>router.push("/trashlog")}>Trash Log</li>
            <li onClick={()=>router.push("/rewards")}>Rewards</li>
-           <li onClick={()=>router.push("/aboutus")}>About</li>
+           <li onClick={()=>router.push("/information")}>Information</li>
+           <li onClick={()=>router.push("/aboutus")}>About Us</li>
        </UL>
 }
 
