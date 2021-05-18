@@ -19,6 +19,7 @@ import {useRouter} from 'next/router'
 import SmallLogo from '../comps/SmallLogo';
 import IsThisRight1 from '../comps/IsThisRight';
 import Pointer from '../comps/Pointer';
+import BackButton from '../comps/TylersComps/BackButton1';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -70,7 +71,12 @@ export default function Home() {
   
 
     <div className="top"><div>
-<IsThisRight1 routeTo="/article1" text="Yeah!"></IsThisRight1>
+<h1>Amazing! <br></br> You have collected 30 or more pieces of trash!</h1>
+<br></br>
+
+
+<h3>This means that ...</h3>
+<BackButton routeTo="/hellouser" text="Great!"></BackButton>
       </div></div>
 
 

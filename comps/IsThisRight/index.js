@@ -5,6 +5,7 @@ import {useRouter} from 'next/router'
 import React from 'react';
 import styled from 'styled-components';
 import RedButton from '../TrashLogComponents/RedButton';
+import Pointer from '../../comps/Pointer';
 
 //----COMPONENT STYLING----//
 
@@ -67,11 +68,35 @@ const GreenButton = ({
   
     var alldata = document.getElementById("totalcollected").innerHTML = integerv1 + integerv2 + integerv3 + integerv4;
 
-    if(alldata <= 10){
+    if(alldata >= 5){
      
-    routeTo = "/"
-       
-    }
+    routeTo = "/contribution5"
+  }
+
+  else if(alldata = 0){
+    routeTo = "/contribution0"
+   }
+
+  else if(alldata >= 10){
+    routeTo = "/contribution10"
+   }
+
+   else if(alldata >= 15){
+    routeTo = "/contribution15"
+   }
+         else if(alldata >= 20){
+          routeTo = "/contribution20"
+         }
+
+         else if(alldata >= 25){
+          routeTo = "/contribution25"
+         }
+
+         else if(alldata >= 30){
+          routeTo = "/contribution30"
+         }
+
+
 
   }
 
@@ -82,7 +107,9 @@ const GreenButton = ({
     const router = useRouter();
 
    return <DivCont onClick={getData}>
-         <h1>Is This Right?</h1><br></br><br></br><br></br><br></br>
+         <h1>Is This Right?</h1>
+         <h1>Click for Your Inputs</h1>
+         <Pointer />
   <h3>Cans Collected:</h3><h1 id="cans"></h1>
   <h3>Bottles Collected:</h3><h1 id="bottles"></h1>
   <h3>Cardboard Collected:</h3><h1 id="cardboard"></h1>

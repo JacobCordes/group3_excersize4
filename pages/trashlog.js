@@ -18,6 +18,7 @@ import InfoIcon2 from '../comps/TrashLogComponents/InfoButton2'
 import InfoIcon3 from '../comps/TrashLogComponents/InfoButton3'
 import InfoIcon4 from '../comps/TrashLogComponents/InfoButton4'
 import TrashGoal from '../comps/TrashLogComponents/TrashGoal';
+import Pointer from '../comps/Pointer';
 
 
 // import  from '../comps/TrashLogComponents/Discussion';
@@ -65,7 +66,7 @@ h1{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:585px;
+  grid-auto-rows:800px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -128,7 +129,8 @@ export default function Home() {
       </div></div>
 
     <div className="left"><div>
-      <h1>Your Statistics</h1>
+      <h1>Tap For Stats</h1>
+      <Pointer />
   <DailyTrash/><br></br>
   <TrashGoal />
       </div></div>
