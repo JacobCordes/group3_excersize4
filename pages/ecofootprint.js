@@ -16,6 +16,7 @@ import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
 import NavBar from '../comps/NavBar/Nav';
 import SmallLogo from '../comps/SmallLogo';
+import BackButton from '../comps/TylersComps/BackButton1';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -125,7 +126,7 @@ export default function Information() {
       • Take shorter, less frequent showers <br></br><br></br>
       • Run the dishwasher and the washing machine only when full. <br></br><br></br></p>
   <br></br>
-  <InfoButton routeTo="/information" text="Go Back"/>
+  <BackButton routeTo="/information" text="Go Back"/>
       </div></div>
 
    

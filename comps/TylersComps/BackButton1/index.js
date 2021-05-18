@@ -7,7 +7,6 @@ import { useEffect } from 'react';
 
 
 const InfoButtonCont = styled.div`
-
 button:hover{
     box-shadow: 2.5px 2.5px 6px #363636;
     transition: 200ms linear;
@@ -23,22 +22,29 @@ font-size: 24px;
 font-family: 'Martel Sans', sans-serif;
 border-radius: 20px;
 border: none;
-
 `
 
 
+// const InfoButton = ({
+//     text="Test Button",
+//     routeTo="/"
+
+    
+// }) => {
 
 
-const InfoButton = () => {
-    useEffect(() => {
-      Aos.init({ duration: 1200});
-    }, []);
+const BackButton = ({
+    text="Test Button",
+    routeTo="/"
+
+    
+}) => {
 
     const router = useRouter();
 
-    return <InfoButtonCont data-aos="slide-right" onClick={()=>router.push("/recyclingtips")}>
-        <ButtonInput>Pro-Recycling Tips</ButtonInput>
+    return <InfoButtonCont onClick={()=>router.push(routeTo)}>
+        <ButtonInput>{text}</ButtonInput>
     </InfoButtonCont>
 }
 
-export default InfoButton;
+export default BackButton;

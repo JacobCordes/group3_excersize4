@@ -29,16 +29,16 @@ border: none;
 
 
 
-const InfoButton = () => {
+const InfoButton2 = () => {
     useEffect(() => {
       Aos.init({ duration: 1200});
     }, []);
 
     const router = useRouter();
 
-    return <InfoButtonCont data-aos="slide-right" onClick={()=>router.push("/recyclingtips")}>
-        <ButtonInput>Pro-Recycling Tips</ButtonInput>
+    return <InfoButtonCont data-aos="slide-left" onClick={()=>router.push("/composttips")}>
+        <ButtonInput>The Best Compost Tips</ButtonInput>
     </InfoButtonCont>
 }
 
-export default InfoButton;
+export default InfoButton2;

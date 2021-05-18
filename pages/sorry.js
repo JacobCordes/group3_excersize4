@@ -13,6 +13,7 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
 import FortniteImg from '../comps/RewardsComps/RewardImagesComp/fortnite';
 import SmallLogo from '../comps/SmallLogo';
+import BackButton from '../comps/TylersComps/BackButton1';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -58,7 +59,7 @@ h1{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:275px;
+  grid-auto-rows:200px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -78,7 +79,7 @@ h1{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1000px;
+  grid-auto-rows:812px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -105,22 +106,12 @@ export default function Rewards() {
   return <RewardsCont>
   
 
-    <div className="top"><div>
-    <SmallLogo />
-      <NavBar/>
-      <h1 className="PageHead">Rewards</h1>
-      </div></div>
-
-    <div className="left"><div><br></br>
-    <DailyTrash text="Your Total Points: 89" />
-
-      </div></div>
 
     <div className="mid"><div>
-  <h1>Fortnite V-Bucks</h1>
-<FortniteImg/>
-<h2>Redeem 50 Points For <br></br>1000 V-Bucks?</h2>
-<GreenButton routeTo="/article1" text="Yeah!"/>
+        <br></br>     <br></br>      <br></br> <br></br>     <br></br>      <br></br>
+<h1>Sorry! <br></br>You do not have enough points</h1>
+
+<BackButton text="Go Back" routeto="/" />
       </div></div>
 
 

@@ -5,10 +5,10 @@ import "aos/dist/aos.css";
 import { useEffect } from 'react';
 
 
-const LogoImg = styled.div`
-background-image: url(logo.png);
-width: 247px;
-height: 247px;
+const Pointer = styled.div`
+background-image: url(pointer.GIF);
+width: 175px;
+height: 175px;
 background-size: 100% 100%;
 `
 
@@ -21,17 +21,13 @@ justify-content:center;
 align-items:center;
 `
 
-const Logo = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1200});
-  }, []);
-
+const Pointer1 = () => {
+  
   return ( 
-  <CardDiv data-aos="flip-down"><LogoImg>
-
-  </LogoImg>
+  <CardDiv>
+<Pointer/>
   </CardDiv>
   );
 };
 
-export default Logo
+export default Pointer1

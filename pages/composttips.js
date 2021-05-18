@@ -16,6 +16,7 @@ import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
 import NavBar from '../comps/NavBar/Nav';
 import SmallLogo from '../comps/SmallLogo';
+import BackButton from '../comps/TylersComps/BackButton1';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -123,7 +124,7 @@ export default function Information() {
 Produce stickers are made of plastic. That means they do not break down in the compost.<br></br><br></br>
 • Banana peels, peach peels, and orange rinds may contain pesticide residues and should be kept out of the compost.</p>
   <br></br><br></br>
-  <InfoButton routeTo="/information" text="Go Back"/>
+  <BackButton routeTo="/information" text="Go Back"/>
       </div></div>
 
    

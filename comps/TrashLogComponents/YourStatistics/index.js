@@ -47,7 +47,9 @@ const DailyTrash = () => {
             var integer4 = parseInt(organicData, 10)
 
       
-            document.getElementById("collected").innerHTML = integer + integer2 + integer3 + integer4;
+            var alldata = document.getElementById("collected").innerHTML = integer + integer2 + integer3 + integer4;
+
+       
           
          }
 
@@ -57,7 +59,7 @@ const DailyTrash = () => {
 //    }
 
     return <InfoButtonCont >
-        <ButtonInput data-aos="slide-right" onClick={dailyCollected}><p>Daily Trash Collected:</p><h1 id="collected"> </h1></ButtonInput>
+        <ButtonInput data-aos="slide-right" onMouseOver={dailyCollected}><p>Daily Trash Collected:</p><h1 id="collected"> </h1></ButtonInput>
     </InfoButtonCont>
 }
 
