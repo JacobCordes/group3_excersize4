@@ -76,7 +76,7 @@ export default function Home() {
 
 
 <h3>This means that ...</h3>
-<BackButton routeTo="/hellouser" text="Great!"></BackButton>
+<BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
       </div></div>
 
 

@@ -10,20 +10,14 @@ import Points from '../comps/RewardsComps/PointsComp';
 import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
 import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
-import Clock from '../comps/TylersComps/Clock';
-import InfoButton from '../comps/TylersComps/Button'
-import Widget from '../comps/TylersComps/Widget'
-import Header from '../comps/Header';
 import NavBar from '../comps/NavBar/Nav';
-import {useRouter} from 'next/router'
+import FortniteImg from '../comps/RewardsComps/RewardImagesComp/fortnite';
 import SmallLogo from '../comps/SmallLogo';
-import IsThisRight1 from '../comps/IsThisRight';
-import Pointer from '../comps/Pointer';
 import BackButton from '../comps/TylersComps/BackButton1';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
-const HomeCont = styled.div`
+const RewardsCont = styled.div`
 
 html, body{
   margin:0px;
@@ -38,10 +32,15 @@ h1{
   font-size:38px;
 }
 
+.PageHead{
+  padding:0px;
+  margin:0px;
+}
+
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1350px;
+  grid-auto-rows:150px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -54,31 +53,76 @@ h1{
 }
 
 .top > div:nth-child(odd){
-  background:#B2A68D;
+  background:#A88C7D;
+}
+
+.left{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:200px;
+  text-align:center;
+  font-family:Martel Sans;
+  color:white;
+  justify-content:center;
 }
 
 
+.left > div{
+  background:white;
+  padding:1em;
+}
+
+.left > div:nth-child(odd){
+  background:#7297A0;
+}
+
+.mid{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:1150px;
+  text-align:center;
+  font-family:Martel Sans;
+  color:white;
+}
 
 
+.mid > div{
+  background:white;
+  padding:1em;
+}
+
+.mid > div:nth-child(odd){
+  background:#9DBA94;
+}
+
+    .bot {
+      padding:10px;
+    }
+
+  }
 `;
 
-
-export default function Home() {
-  
-  
-  const router = useRouter();
-  return <HomeCont>
+export default function Rewards() {
+  return <RewardsCont>
   
 
-    <div className="top"><div>
-<h1>Awesome! <br></br> You have collected 10 or more pieces of trash!</h1>
-<br></br>
 
+    <div className="mid"><div>
+        <br></br>     <br></br>      <br></br> <br></br>     <br></br>      <br></br>
+<h1>Sorry! <br></br>You have exceeded the trash input limit</h1>
 
-<h3>This means that ...</h3>
-<BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
+<BackButton text="Try Again" routeTo="/trashlog" />
       </div></div>
 
 
-         </HomeCont>
+    
+         </RewardsCont>
 }
+{
+  
+  
+  
+  /* <JacobButton text="Jacob's Button" bgcolor="#FAD"/>
+<KodiButton text="Kodi's Button" bgcolor="#856DBC" />
+<BonnieButton text="Bonnie's Button"/>
+<TylerButton/> */}

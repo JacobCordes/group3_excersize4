@@ -76,7 +76,7 @@ export default function Home() {
 
 
 <h3>Congratulations! <br></br>Through your contributions you were able to contribute</h3>
-<BackButton routeTo="/hellouser" text="Great!"></BackButton>
+<BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
       </div></div>
 
 
