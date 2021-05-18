@@ -65,8 +65,17 @@ const GreenButton = ({
     var integerv4 = parseInt(organics, 10)
   
   
-    document.getElementById("totalcollected").innerHTML = integerv1 + integerv2 + integerv3 + integerv4;
+    var alldata = document.getElementById("totalcollected").innerHTML = integerv1 + integerv2 + integerv3 + integerv4;
+
+    if(alldata <= 10){
+     
+    routeTo = "/"
+       
+    }
+
   }
+
+ 
 
 
     
@@ -85,7 +94,7 @@ const GreenButton = ({
      <br></br>
   <RedButton routeTo="/trashlog"text="Nope."/><br></br>
 <br></br>
-      <ButtonCont1 onClick={()=>router.push(routeTo)}>       
+      <ButtonCont1 id="testbutton" onClick={()=>router.push(routeTo)}>       
        <Button>
            <ButtonText1>{text}</ButtonText1>
            </Button>

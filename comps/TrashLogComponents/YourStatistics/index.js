@@ -47,7 +47,9 @@ const DailyTrash = () => {
             var integer4 = parseInt(organicData, 10)
 
       
-            document.getElementById("collected").innerHTML = integer + integer2 + integer3 + integer4;
+            var alldata = document.getElementById("collected").innerHTML = integer + integer2 + integer3 + integer4;
+
+       
           
          }
 
