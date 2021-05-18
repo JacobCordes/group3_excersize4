@@ -78,7 +78,7 @@ h1{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:630px;
+  grid-auto-rows:350px;
   text-align:center;
   font-family:Martel Sans;
   color:white;

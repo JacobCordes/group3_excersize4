@@ -27,7 +27,7 @@ const Logo = () => {
   }, []);
 
   return ( 
-  <CardDiv data-aos="fade-in"><LogoImg>
+  <CardDiv data-aos="flip-down"><LogoImg>
 
   </LogoImg>
   </CardDiv>

@@ -13,6 +13,8 @@ import RewardsSubhead from '../comps/RewardsComps/Subheading';
 import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import Clock from '../comps/TylersComps/Clock';
 import InfoButton from '../comps/TylersComps/Button'
+import InfoButton2 from '../comps/TylersComps/Button2'
+import InfoButton3 from '../comps/TylersComps/Button3'
 import Widget from '../comps/TylersComps/Widget'
 import NavBar from '../comps/NavBar/Nav';
 import ComHight from '../comps/TylersComps/CommunityHighlights';
@@ -130,8 +132,8 @@ export default function Information() {
     <div className="mid"><div>
   <h1>Discussion is Key</h1>
 <InfoButton routeTo="/recyclingtips" text="Pro-Recycling Tips" /><br></br>
-<InfoButton routeTo="/composttips" text="The Best Compost Tips"/><br></br>
-<InfoButton routeTo="/ecofootprint" text="Minding Your Eco-Footprint"/>
+<InfoButton2 /><br></br>
+<InfoButton3 />
 
       </div></div>
 

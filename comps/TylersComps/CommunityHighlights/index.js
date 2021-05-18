@@ -32,7 +32,7 @@ const CommunityHighlights = () => {
     
     const router = useRouter();
 
-    return <CardDiv data-aos="fade-in"><ComHight onClick={()=>router.push("/community_highlights")}>
+    return <CardDiv data-aos="flip-up"><ComHight onClick={()=>router.push("/community_highlights")}>
         
         </ComHight>
         </CardDiv>

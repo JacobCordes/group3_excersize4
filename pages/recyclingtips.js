@@ -16,6 +16,7 @@ import InfoButton from '../comps/TylersComps/Button'
 import Widget from '../comps/TylersComps/Widget'
 import NavBar from '../comps/NavBar/Nav';
 import SmallLogo from '../comps/SmallLogo';
+import BackButton from '../comps/TylersComps/BackButton1';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -122,7 +123,7 @@ export default function Information() {
       <p>• Don’t recycle anything smaller than a credit card. These objects are too small to be sorted and can jam the recycling equipment.<br></br><br></br>
       • Glass can be recycled endlessly; it does not wear out after several recyclings, so be sure to always recycle your glass bottles and containers.</p>
   <br></br><br></br>
-  <InfoButton routeTo="/information" text="Go Back"/>
+  <BackButton routeTo="/information" text="Go Back"/>
       </div></div>
 
    

@@ -17,6 +17,7 @@ import Header from '../comps/Header';
 import NavBar from '../comps/NavBar/Nav';
 import {useRouter} from 'next/router'
 import SmallLogo from '../comps/SmallLogo';
+import IsThisRight1 from '../comps/IsThisRight';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -38,7 +39,7 @@ h1{
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1000px;
+  grid-auto-rows:1200px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -59,30 +60,18 @@ h1{
 
 `;
 
-export default function Home() {
 
+export default function Home() {
+  
+  
   const router = useRouter();
   return <HomeCont>
   
 
     <div className="top"><div>
-  <h1>Is This Right?</h1><br></br><br></br><br></br><br></br>
-  <h3>1x Can<br></br>1x Bottle<br></br>1x Cardboard<br></br>1x Organic</h3>
-  <hr></hr>
-  <h3>Total 4 items<br></br>Collected</h3><br></br><br></br><br></br>
-  <RedButton routeTo="/trashlog"text="Nope."/><br></br>
-<br></br>
-<GreenButton routeTo="/collectedtrash" text="Yeah!"/>
+<IsThisRight1 routeTo="/article1" text="Yeah!"></IsThisRight1>
       </div></div>
 
 
          </HomeCont>
 }
-{
-  
-  
-  
-  /* <JacobButton text="Jacob's Button" bgcolor="#FAD"/>
-<KodiButton text="Kodi's Button" bgcolor="#856DBC" />
-<BonnieButton text="Bonnie's Button"/>
-<TylerButton/> */}

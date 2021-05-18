@@ -33,31 +33,8 @@ const TrashGoal = () => {
     }, []);
 
 
-
-
-        function dailyCollected(){
-            var canData = sessionStorage.getItem("cans");
-            var bottleData = sessionStorage.getItem("bottles");
-            var cardboardData = sessionStorage.getItem("cardboard");
-            var organicData = sessionStorage.getItem("organics");
-
-            var integer = parseInt(canData, 10)
-            var integer2 = parseInt(bottleData, 10)
-            var integer3 = parseInt(cardboardData, 10)
-            var integer4 = parseInt(organicData, 10)
-
-      
-            document.getElementById("collected").innerHTML = integer + integer2 + integer3 + integer4;
-          
-         }
-
-
-//    function getData(){
-//        var input = sessionStorage.getItem("cans")
-//    }
-
     return <InfoButtonCont >
-        <ButtonInput data-aos="slide-right" onClick={dailyCollected}><p>Weekly Trash Goal: 25</p><h1 id="collected"> </h1></ButtonInput>
+        <ButtonInput data-aos="slide-left"><p>Weekly Trash Goal: <h1>25</h1></p><h1 id="collected"> </h1></ButtonInput>
     </InfoButtonCont>
 }
 
