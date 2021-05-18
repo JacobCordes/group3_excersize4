@@ -48,7 +48,10 @@ const GreenButton = ({
     routeTo="/"
 }) => {
 
-      function getData(){
+        
+        function getData(){
+
+      if(process.browser){
     var cans = sessionStorage.getItem("cans");
     var bottles = sessionStorage.getItem("bottles");
     var cardboard = sessionStorage.getItem("cardboard");
@@ -67,38 +70,21 @@ const GreenButton = ({
   
   
     var alldata = document.getElementById("totalcollected").innerHTML = integerv1 + integerv2 + integerv3 + integerv4;
+    
+    if(alldata = 0){
+      routeTo = "/contribution0"
+     }
 
-    if(alldata >= 5){
+    else if(alldata = 1, 2, 3, 4){
      
-    routeTo = "/contribution5"
+    routeTo = "/under5"
+    }
+
+
+    
   }
 
-  else if(alldata = 0){
-    routeTo = "/contribution0"
-   }
-
-  else if(alldata >= 10){
-    routeTo = "/contribution10"
-   }
-
-   else if(alldata >= 15){
-    routeTo = "/contribution15"
-   }
-         else if(alldata >= 20){
-          routeTo = "/contribution20"
-         }
-
-         else if(alldata >= 25){
-          routeTo = "/contribution25"
-         }
-
-         else if(alldata >= 30){
-          routeTo = "/contribution30"
-         }
-
-
-
-  }
+}
 
  
 
