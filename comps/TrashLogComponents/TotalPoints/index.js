@@ -47,8 +47,9 @@ const TotalPoints = () => {
             var integer4 = parseInt(organicData, 10)
 
       
-            document.getElementById("collected").innerHTML = integer + integer2 + integer3 + integer4;
+            var allData = document.getElementById("collected").innerHTML = integer + integer2 + integer3 + integer4;
           
+
          }
 
 
