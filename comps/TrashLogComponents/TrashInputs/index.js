@@ -192,12 +192,10 @@ const TrashInputs = () => {
 
     function Reset(){
 
-        let btnClear = document.getElementById("reset");
-        let inputs = document.querySelectorAll("input");
-    
-        btnClear.addEventListener('click', () => {
-                inputs.forEach(input => input.value = '');
-        });
+       document.getElementById("Inputs1").value = '';
+       document.getElementById("Inputs2").value = '';
+       document.getElementById("Inputs3").value = '';
+       document.getElementById("Inputs4").value = '';
         
     }
 
