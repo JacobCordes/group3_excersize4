@@ -121,7 +121,7 @@ export default function Rewards() {
   <h1>Cindeplex Movie tICKET</h1>
 <CineplexImg/>
 <h2>Redeem 50 Points For <br></br>1 Movie Ticket?</h2>
-<GreenButton text="Yeah!"/>
+<GreenButton routeTo="/article1" text="Yeah!"/>
       </div></div>
 
 
