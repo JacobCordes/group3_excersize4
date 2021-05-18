@@ -120,7 +120,7 @@ export default function Rewards() {
   <h1>Credit For Tuition</h1>
 <GradImg/>
 <h2>Redeem 50 Points For <br></br>5$ Credit For Tuition?</h2>
-<GreenButton text="Yeah!"/>
+<GreenButton routeTo="/article1" text="Yeah!"/>
       </div></div>
 
 

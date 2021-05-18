@@ -120,7 +120,7 @@ export default function Rewards() {
   <h1>One Day Buss Pass</h1>
 <BusImg/>
 <h2>Redeem 50 Points For <br></br> One Day Buss Pass?</h2>
-<GreenButton text="Yeah!"/>
+<GreenButton routeTo="/article1" text="Yeah!"/>
       </div></div>
 
 

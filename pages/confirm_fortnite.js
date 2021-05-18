@@ -120,7 +120,7 @@ export default function Rewards() {
   <h1>Fortnite V-Bucks</h1>
 <FortniteImg/>
 <h2>Redeem 50 Points For <br></br>1000 V-Bucks?</h2>
-<GreenButton text="Yeah!"/>
+<GreenButton routeTo="/article1" text="Yeah!"/>
       </div></div>
 
 

@@ -120,7 +120,7 @@ export default function Rewards() {
   <h1>Random E-Book</h1>
 <BooksImg/>
 <h2>Redeem 50 Points For <br></br>1 Book?</h2>
-<GreenButton text="Yeah!"/>
+<GreenButton routeTo="/article1" text="Yeah!"/>
       </div></div>
 
 

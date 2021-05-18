@@ -120,7 +120,7 @@ export default function Rewards() {
   <h1>BIC Lead Pencils</h1>
 <PencilsImg/>
 <h2>Redeem 50 Points For <br></br> School Supplies?</h2>
-<GreenButton text="Yeah!"/>
+<GreenButton routeTo="/article1" text="Yeah!"/>
       </div></div>
 
 
