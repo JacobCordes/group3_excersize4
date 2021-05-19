@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 const CardCont1 = styled.div`
   background-color:${props=>props.bg};
-  background-image: url(stanleypark.jpg);
+  background-image: url(stanley2.jpg);
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
@@ -65,7 +65,7 @@ const CardCont3 = styled.div`
 
 const CardCont4 = styled.div`
   background-color:${props=>props.bg};
-  background-image: url(EastVan.jpg);
+  background-image: url(east.jpg);
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
@@ -103,7 +103,7 @@ const CardCont5 = styled.div`
 
 const CardCont6 = styled.div`
   background-color:${props=>props.bg};
-  background-image: url(ScienceWorld.jpg);
+  background-image: url(science.jpg);
   background-size: 100% 100%;
   padding:5px;
   border-radius:20px;
