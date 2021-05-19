@@ -1,20 +1,7 @@
 import styled from 'styled-components';
-import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
-import GreenButton from '../comps/TrashLogComponents/GreenButton';
-import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/TrashInputs';
-import TrashInputs2 from '../comps/TrashLogComponents/TrashInputs2';
-import TrashInputs3 from '../comps/TrashLogComponents/TrashInputs3';
-import TrashInputs4 from '../comps/TrashLogComponents/TrashInputs4';
-import Points from '../comps/RewardsComps/PointsComp';
-import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
-import RewardsSubhead from '../comps/RewardsComps/Subheading';
-import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
-import BooksImg from '../comps/RewardsComps/RewardImagesComp/books';
 import SmallLogo from '../comps/SmallLogo';
-import Pointer from '../comps/Pointer';
-import TotalPoints from '../comps/TrashLogComponents/TotalPoints';
+import Confirm2 from '../comps/RewardsComps/Confirm2';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -80,7 +67,7 @@ h1{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:700px;
+  grid-auto-rows:1150px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -101,53 +88,11 @@ h1{
     }
 
   }
-
-
 `;
 
-const InfoButtonCont = styled.div`
-
-`
-
-const ButtonInput = styled.button`
-background-color:#B2A68D;
-color:#FFF;
-width: 324px;
-height: 178px;
-font-size: 24px;
-border: none;
-font-family: 'Martel Sans', sans-serif;
-
-h1{
-    line-break:none;
-}
-`
-
-
-
-
 export default function Rewards() {
-
-  function dailyCollected(){
-    var canData = sessionStorage.getItem("cans");
-    var bottleData = sessionStorage.getItem("bottles");
-    var cardboardData = sessionStorage.getItem("cardboard");
-    var organicData = sessionStorage.getItem("organics");
-
-    var integer = parseInt(canData, 10)
-    var integer2 = parseInt(bottleData, 10)
-    var integer3 = parseInt(cardboardData, 10)
-    var integer4 = parseInt(organicData, 10)
-
-
-    var allData = document.getElementById("collected").innerHTML = integer + integer2 + integer3 + integer4;
+  return <RewardsCont>
   
-
- }
-
-
- 
-  return <RewardsCont onClick={dailyCollected}>
 
     <div className="top"><div>
     <SmallLogo />
@@ -155,21 +100,33 @@ export default function Rewards() {
       <h1 className="PageHead">Rewards</h1>
       </div></div>
 
-    <div className="left"><div>
-    <h1>Tap for Stats</h1>
-      <Pointer />
-    <TotalPoints />
-
-      </div></div>
-
+    
     <div className="mid"><div>
-  <h1>Random E-Book</h1>
-<BooksImg/>
-<h2>Redeem 50 Points For <br></br>1 Book?</h2>
-<GreenButton onClick={()=>router.push(routeTo)} text="Yeah!"/>
+
+  <Confirm2 />
+
+
+    {/* <h1>Tap for Stats</h1>
+      <Pointer />
+      <TotalPoints />
+
+
+
+  <h1>Cineplex Movie <br></br>Ticket</h1>
+<CineplexImg/>
+<h2>Redeem 35 Points For <br></br>1 Movie Ticket?</h2>
+<GreenButton routeTo="/article1" text="Yeah!"/> */}
       </div></div>
 
 
     
          </RewardsCont>
 }
+{
+  
+  
+  
+  /* <JacobButton text="Jacob's Button" bgcolor="#FAD"/>
+<KodiButton text="Kodi's Button" bgcolor="#856DBC" />
+<BonnieButton text="Bonnie's Button"/>
+<TylerButton/> */}

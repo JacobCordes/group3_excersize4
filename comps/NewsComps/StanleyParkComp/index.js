@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 const ImgDiv = styled.div`
 background-color:${props=>props.bg};
-background-image: url(stanleypark.jpg);
+background-image: url(stanley.jpg);
 background-size: 100% 100%;
 padding:5px;
 border-radius:20px;

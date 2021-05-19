@@ -1,21 +1,7 @@
 import styled from 'styled-components';
-import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
-import GreenButton from '../comps/TrashLogComponents/GreenButton';
-import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/TrashInputs';
-import TrashInputs2 from '../comps/TrashLogComponents/TrashInputs2';
-import TrashInputs3 from '../comps/TrashLogComponents/TrashInputs3';
-import TrashInputs4 from '../comps/TrashLogComponents/TrashInputs4';
-import Points from '../comps/RewardsComps/PointsComp';
-import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
-import RewardsSubhead from '../comps/RewardsComps/Subheading';
-import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
-import PencilsImg from '../comps/RewardsComps/RewardImagesComp/pencils';
-import CineplexImg from '../comps/RewardsComps/RewardImagesComp/cineplex'
 import SmallLogo from '../comps/SmallLogo';
-import Pointer from '../comps/Pointer';
-import TotalPoints from '../comps/TrashLogComponents/TotalPoints';
+import Confirm from '../comps/RewardsComps/Confirm';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -81,7 +67,7 @@ h1{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:700px;
+  grid-auto-rows:1150px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -114,18 +100,22 @@ export default function Rewards() {
       <h1 className="PageHead">Rewards</h1>
       </div></div>
 
-    <div className="left"><div>
-    <h1>Tap for Stats</h1>
+    
+    <div className="mid"><div>
+
+  <Confirm />
+
+
+    {/* <h1>Tap for Stats</h1>
       <Pointer />
       <TotalPoints />
 
-      </div></div>
 
-    <div className="mid"><div>
-  <h1>Cindeplex Movie tICKET</h1>
+
+  <h1>Cineplex Movie <br></br>Ticket</h1>
 <CineplexImg/>
-<h2>Redeem 50 Points For <br></br>1 Movie Ticket?</h2>
-<GreenButton routeTo="/article1" text="Yeah!"/>
+<h2>Redeem 35 Points For <br></br>1 Movie Ticket?</h2>
+<GreenButton routeTo="/article1" text="Yeah!"/> */}
       </div></div>
 
 
