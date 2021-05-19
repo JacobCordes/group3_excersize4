@@ -71,7 +71,7 @@ export default function Home() {
   
 
     <div className="top"><div>
-<h1>Awesome! <br></br> You have collected 10 or more pieces of trash!</h1>
+<h1>Incredible! <br></br> You have Maxed out the trash log with 50 collections!</h1>
 <br></br>
 
 

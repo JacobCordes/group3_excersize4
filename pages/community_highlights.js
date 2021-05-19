@@ -68,7 +68,7 @@ h1{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:600px;
+  grid-auto-rows:700px;
   text-align:center;
   font-family:Martel Sans;
   color:white;

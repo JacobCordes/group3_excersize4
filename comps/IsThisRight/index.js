@@ -48,7 +48,10 @@ const GreenButton = ({
     routeTo="/"
 }) => {
 
-      function getData(){
+        
+        function getData(){
+
+      if(process.browser){
     var cans = sessionStorage.getItem("cans");
     var bottles = sessionStorage.getItem("bottles");
     var cardboard = sessionStorage.getItem("cardboard");
@@ -67,38 +70,278 @@ const GreenButton = ({
   
   
     var alldata = document.getElementById("totalcollected").innerHTML = integerv1 + integerv2 + integerv3 + integerv4;
+    
+    if(alldata === 0){
+      routeTo = "/contribution0"
+     }
 
-    if(alldata >= 5){
+    else if(alldata === 1){
      
-    routeTo = "/contribution5"
+    routeTo = "/under5"
+    }
+
+    else if(alldata === 2){
+     
+      routeTo = "/under5"
+      }
+
+      else if(alldata === 3){
+     
+        routeTo = "/under5"
+        }
+
+        else if(alldata === 4){
+     
+          routeTo = "/under5"
+          }
+
+    else if(alldata === 5){
+     
+      routeTo = "/contribution5"
+      }
+
+      else if(alldata === 6){
+     
+        routeTo = "/contribution5"
+        }
+
+        else if(alldata === 7){
+     
+          routeTo = "/contribution5"
+          }
+
+          else if(alldata === 8){
+     
+            routeTo = "/contribution5"
+            }
+
+            else if(alldata === 9){
+     
+              routeTo = "/contribution5"
+              }
+              
+
+            else if(alldata === 10){
+     
+              routeTo = "/contribution10"
+              }
+
+              else if(alldata === 11){
+     
+                routeTo = "/contribution10"
+                }
+
+                else if(alldata === 12){
+     
+                  routeTo = "/contribution10"
+                  }
+
+                  else if(alldata === 13){
+     
+                    routeTo = "/contribution10"
+                    }
+
+                    else if(alldata === 14){
+     
+                      routeTo = "/contribution10"
+                      }
+
+                      else if(alldata === 15){
+     
+                        routeTo = "/contribution15"
+                        }
+
+                        else if(alldata === 16){
+     
+                          routeTo = "/contribution15"
+                          }
+    
+                          
+                          else if(alldata === 17){
+     
+                            routeTo = "/contribution15"
+                            }
+    
+                            
+                            else if(alldata === 18){
+     
+                              routeTo = "/contribution15"
+                              }
+    
+                              
+                              else if(alldata === 19){
+     
+                                routeTo = "/contribution15"
+                                }
+
+                                else if(alldata === 20){
+     
+                                  routeTo = "/contribution20"
+                                  }
+
+                                  else if(alldata === 21){
+     
+                                    routeTo = "/contribution20"
+                                    }
+
+                                    else if(alldata === 22){
+     
+                                      routeTo = "/contribution20"
+                                      }
+
+                                      else if(alldata === 23){
+     
+                                        routeTo = "/contribution20"
+                                        }
+
+                                        else if(alldata === 24){
+     
+                                          routeTo = "/contribution20"
+                                          }
+
+                                          else if(alldata === 25){
+     
+                                            routeTo = "/contribution25"
+                                            }
+
+                                            else if(alldata === 26){
+     
+                                              routeTo = "/contribution25"
+                                              }
+
+                                              else if(alldata === 27){
+     
+                                                routeTo = "/contribution25"
+                                                }
+
+                                                else if(alldata === 28){
+     
+                                                  routeTo = "/contribution25"
+                                                  }
+
+                                                  else if(alldata === 29){
+     
+                                                    routeTo = "/contribution25"
+                                                    }
+
+                                                    else if(alldata === 30){
+     
+                                                      routeTo = "/contribution30"
+                                                      }
+
+                                                      else if(alldata === 31){
+     
+                                                        routeTo = "/contribution30"
+                                                        }
+
+                                                        else if(alldata === 32){
+     
+                                                          routeTo = "/contribution30"
+                                                          }
+
+                                                          else if(alldata === 33){
+     
+                                                            routeTo = "/contribution30"
+                                                            }
+
+                                                            else if(alldata === 34){
+     
+                                                              routeTo = "/contribution30"
+                                                              }
+
+                                                              else if(alldata === 35){
+     
+                                                                routeTo = "/contribution30"
+                                                                }
+
+                                                                else if(alldata === 36){
+     
+                                                                  routeTo = "/contribution30"
+                                                                  }
+
+                                                                  else if(alldata === 37){
+     
+                                                                    routeTo = "/contribution30"
+                                                                    }
+
+                                                                    else if(alldata === 38){
+     
+                                                                      routeTo = "/contribution30"
+                                                                      }
+
+                                                                      else if(alldata === 39){
+     
+                                                                        routeTo = "/contribution30"
+                                                                        }
+
+                                                                        else if(alldata === 40){
+     
+                                                                          routeTo = "/contribution40"
+                                                                          }
+
+                                                                          else if(alldata === 41){
+     
+                                                                            routeTo = "/contribution40"
+                                                                            }
+
+                                                                            else if(alldata === 42){
+     
+                                                                              routeTo = "/contribution40"
+                                                                              }
+
+                                                                              else if(alldata === 43){
+     
+                                                                                routeTo = "/contribution40"
+                                                                                }
+
+                                                                                else if(alldata === 44){
+     
+                                                                                  routeTo = "/contribution40"
+                                                                                  }
+
+                                                                                  else if(alldata === 45){
+     
+                                                                                    routeTo = "/contribution40"
+                                                                                    }
+
+                                                                                    else if(alldata === 46){
+     
+                                                                                      routeTo = "/contribution40"
+                                                                                      }
+
+                                                                                      else if(alldata === 47){
+     
+                                                                                        routeTo = "/contribution40"
+                                                                                        }
+
+                                                                                        else if(alldata === 48){
+     
+                                                                                          routeTo = "/contribution40"
+                                                                                          }
+
+                                                                                          else if(alldata === 49){
+     
+                                                                                            routeTo = "/contribution40"
+                                                                                            }
+
+                                                                                            else if(alldata === 50){
+     
+                                                                                              routeTo = "/contribution50"
+                                                                                              }
+
+                                                                                              else if(alldata >= 51){
+     
+                                                                                                routeTo = "/toomany"
+                                                                                                }
+            
+    
+
+  
+
+    
   }
 
-  else if(alldata = 0){
-    routeTo = "/contribution0"
-   }
-
-  else if(alldata >= 10){
-    routeTo = "/contribution10"
-   }
-
-   else if(alldata >= 15){
-    routeTo = "/contribution15"
-   }
-         else if(alldata >= 20){
-          routeTo = "/contribution20"
-         }
-
-         else if(alldata >= 25){
-          routeTo = "/contribution25"
-         }
-
-         else if(alldata >= 30){
-          routeTo = "/contribution30"
-         }
-
-
-
-  }
+}
 
  
 

@@ -71,12 +71,12 @@ export default function Home() {
   
 
     <div className="top"><div>
-<h1>Awesome! <br></br> You have collected 10 or more pieces of trash!</h1>
+<h1>Good! <br></br> You have collected under 5 pieces of trash!</h1>
 <br></br>
 
 
 <h3>This means that ...</h3>
-<BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
+<BackButton routeTo="/hellouser" text="Great!"></BackButton>
       </div></div>
 
 

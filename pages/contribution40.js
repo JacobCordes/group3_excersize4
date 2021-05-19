@@ -71,7 +71,7 @@ export default function Home() {
   
 
     <div className="top"><div>
-<h1>Awesome! <br></br> You have collected 10 or more pieces of trash!</h1>
+<h1>Wow! <br></br> You have collected 40 or more pieces of trash!</h1>
 <br></br>
 
 

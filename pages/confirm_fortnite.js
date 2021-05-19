@@ -13,6 +13,8 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
 import FortniteImg from '../comps/RewardsComps/RewardImagesComp/fortnite';
 import SmallLogo from '../comps/SmallLogo';
+import Pointer from '../comps/Pointer';
+import TotalPoints from '../comps/TrashLogComponents/TotalPoints';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -58,7 +60,7 @@ h1{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:275px;
+  grid-auto-rows:525px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -78,7 +80,7 @@ h1{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1000px;
+  grid-auto-rows:700px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -111,8 +113,10 @@ export default function Rewards() {
       <h1 className="PageHead">Rewards</h1>
       </div></div>
 
-    <div className="left"><div><br></br>
-    <DailyTrash text="Your Total Points: 89" />
+    <div className="left"><div>
+    <h1>Tap for Stats</h1>
+      <Pointer />
+      <TotalPoints />
 
       </div></div>
 
