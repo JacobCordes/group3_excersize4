@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 
 const PickupCan = styled.div`
-background-image: url(pickupcan.GIF);
+background-image: url(pickup.GIF);
 width: 175px;
 height: 175px;
 background-size: 100% 100%;
