@@ -108,11 +108,12 @@ const TrashInputs3 = ({
     const router = useRouter();
 
     function cardboardData() {
+        if(process.browser){
         var input3 = document.getElementById("Inputs3").value;
         sessionStorage.setItem("cardboard", input3)
         alert(input3);
     }
-
+    }
 
    return <CardDiv>
        <DivCont>  

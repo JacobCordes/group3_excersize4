@@ -172,6 +172,7 @@ const TrashInputs = () => {
     const router = useRouter();
 
     function trashData() {
+       if(process.browser){
         var input = document.getElementById("Inputs1").value;
         sessionStorage.setItem("cans", input)
 
@@ -187,7 +188,7 @@ const TrashInputs = () => {
       
       
     }
-    
+}
 
 
     function Reset(){

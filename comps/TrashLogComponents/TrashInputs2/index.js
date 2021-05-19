@@ -108,11 +108,12 @@ const TrashInputs2 = ({
     const router = useRouter();
 
     function bottlesData() {
+        if(process.browser){
         var input2 = document.getElementById("Inputs2").value;
         sessionStorage.setItem("bottles", input2)
         alert(input2);
     }
-
+    }
 
 
    return <CardDiv>
