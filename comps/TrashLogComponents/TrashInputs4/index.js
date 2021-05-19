@@ -110,10 +110,12 @@ const TrashInputs4 = ({
 
 
     function organicsData() {
+        if(process.browser){
         var input4 = document.getElementById("Inputs4").value;
         sessionStorage.setItem("organics", input4)
         alert(input4);
     }
+}
 
 
    return <CardDiv>

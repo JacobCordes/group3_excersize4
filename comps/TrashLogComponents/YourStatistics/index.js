@@ -36,6 +36,7 @@ const DailyTrash = () => {
 
 
         function dailyCollected(){
+            if(process.browser){
             var canData = sessionStorage.getItem("cans");
             var bottleData = sessionStorage.getItem("bottles");
             var cardboardData = sessionStorage.getItem("cardboard");
@@ -52,7 +53,7 @@ const DailyTrash = () => {
        
           
          }
-
+        }
 
 //    function getData(){
 //        var input = sessionStorage.getItem("cans")

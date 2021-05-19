@@ -36,6 +36,7 @@ const TotalPoints = () => {
 
 
         function dailyCollected(){
+            if(process.browser){
             var canData = sessionStorage.getItem("cans");
             var bottleData = sessionStorage.getItem("bottles");
             var cardboardData = sessionStorage.getItem("cardboard");
@@ -51,7 +52,7 @@ const TotalPoints = () => {
           
 
          }
-
+        }
 
 //    function getData(){
 //        var input = sessionStorage.getItem("cans")
