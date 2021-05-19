@@ -1,18 +1,4 @@
 import styled from 'styled-components';
-import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
-import GreenButton from '../comps/TrashLogComponents/GreenButton';
-import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/TrashInputs';
-import TrashInputs2 from '../comps/TrashLogComponents/TrashInputs2';
-import TrashInputs3 from '../comps/TrashLogComponents/TrashInputs3';
-import TrashInputs4 from '../comps/TrashLogComponents/TrashInputs4';
-import Points from '../comps/RewardsComps/PointsComp';
-import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
-import RewardsSubhead from '../comps/RewardsComps/Subheading';
-import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
-import NavBar from '../comps/NavBar/Nav';
-import FortniteImg from '../comps/RewardsComps/RewardImagesComp/fortnite';
-import SmallLogo from '../comps/SmallLogo';
 import BackButton from '../comps/TylersComps/BackButton1';
 import SadEarth from '../comps/SadEarthPic';
 // import  from '../comps/TrashLogComponents/Discussion';
@@ -111,7 +97,8 @@ export default function Rewards() {
     <div className="mid"><div>
         <br></br>     <br></br>      <br></br> <br></br>     <br></br>      <br></br>
 <h1>Sorry! <br></br>You do not have enough points</h1>
-
+<SadEarth />
+<br></br>
 <BackButton text="Go Back" routeTo="/rewards" />
       </div></div>
 

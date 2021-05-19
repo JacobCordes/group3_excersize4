@@ -1,22 +1,7 @@
 import styled from 'styled-components';
-import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
-import GreenButton from '../comps/TrashLogComponents/GreenButton';
-import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/TrashInputs';
-import TrashInputs2 from '../comps/TrashLogComponents/TrashInputs2';
-import TrashInputs3 from '../comps/TrashLogComponents/TrashInputs3';
-import TrashInputs4 from '../comps/TrashLogComponents/TrashInputs4';
-import Points from '../comps/RewardsComps/PointsComp';
-import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
-import RewardsSubhead from '../comps/RewardsComps/Subheading';
-import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
-import PencilsImg from '../comps/RewardsComps/RewardImagesComp/pencils';
-import CineplexImg from '../comps/RewardsComps/RewardImagesComp/cineplex'
 import SmallLogo from '../comps/SmallLogo';
-import Pointer from '../comps/Pointer';
-import TotalPoints from '../comps/TrashLogComponents/TotalPoints';
-import Confirm from '../comps/RewardsComps/Confirm';
+import Confirm2 from '../comps/RewardsComps/Confirm2';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 

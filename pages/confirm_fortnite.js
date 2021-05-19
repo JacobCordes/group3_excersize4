@@ -1,20 +1,7 @@
 import styled from 'styled-components';
-import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
-import GreenButton from '../comps/TrashLogComponents/GreenButton';
-import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/TrashInputs';
-import TrashInputs2 from '../comps/TrashLogComponents/TrashInputs2';
-import TrashInputs3 from '../comps/TrashLogComponents/TrashInputs3';
-import TrashInputs4 from '../comps/TrashLogComponents/TrashInputs4';
-import Points from '../comps/RewardsComps/PointsComp';
-import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
-import RewardsSubhead from '../comps/RewardsComps/Subheading';
-import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
-import FortniteImg from '../comps/RewardsComps/RewardImagesComp/fortnite';
 import SmallLogo from '../comps/SmallLogo';
-import Pointer from '../comps/Pointer';
-import TotalPoints from '../comps/TrashLogComponents/TotalPoints';
+import Confirm4 from '../comps/RewardsComps/Confirm4';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -115,16 +102,7 @@ export default function Rewards() {
 
    
     <div className="mid"><div>
-    <h1>Tap for Stats</h1>
-      <Pointer />
-      <TotalPoints />
-
-   
-
-  <h1>Fortnite V-Bucks</h1>
-<FortniteImg/>
-<h2>Redeem 35 Points For <br></br>1000 V-Bucks?</h2>
-<GreenButton routeTo="/article1" text="Yeah!"/>
+<Confirm4 />
       </div></div>
 
 

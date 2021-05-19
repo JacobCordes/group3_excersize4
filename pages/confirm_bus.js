@@ -1,20 +1,7 @@
 import styled from 'styled-components';
-import DailyTrash from '../comps/TrashLogComponents/YourStatistics';
-import GreenButton from '../comps/TrashLogComponents/GreenButton';
-import RedButton from '../comps/TrashLogComponents/RedButton';
-import TrashInputs from '../comps/TrashLogComponents/TrashInputs';
-import TrashInputs2 from '../comps/TrashLogComponents/TrashInputs2';
-import TrashInputs3 from '../comps/TrashLogComponents/TrashInputs3';
-import TrashInputs4 from '../comps/TrashLogComponents/TrashInputs4';
-import Points from '../comps/RewardsComps/PointsComp';
-import RewardsHeading from '../comps/RewardsComps/RewardsHeadingComp';
-import RewardsSubhead from '../comps/RewardsComps/Subheading';
-import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
-import BusImg from '../comps/RewardsComps/RewardImagesComp/bus';
 import SmallLogo from '../comps/SmallLogo';
-import Pointer from '../comps/Pointer';
-import TotalPoints from '../comps/TrashLogComponents/TotalPoints';
+import Confirm3 from '../comps/RewardsComps/Confirm3';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -115,16 +102,7 @@ export default function Rewards() {
 
 
     <div className="mid"><div>
-    <h1>Tap for Stats</h1>
-      <Pointer />
-      <TotalPoints />
-
-     
-
-  <h1>One Day Buss Pass</h1>
-<BusImg/>
-<h2>Redeem 35 Points For <br></br> One Day Buss Pass?</h2>
-<GreenButton routeTo="/article1" text="Yeah!"/>
+   <Confirm3 />
       </div></div>
 
 
