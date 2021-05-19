@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 
 const Pointer = styled.div`
-background-image: url(pointer.GIF);
+background-image: url(pointerfinger.GIF);
 width: 175px;
 height: 175px;
 background-size: 100% 100%;
