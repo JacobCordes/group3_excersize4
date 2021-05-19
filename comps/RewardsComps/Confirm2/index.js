@@ -6,7 +6,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Pointer from '../../Pointer';
 import TotalPoints from '../../TrashLogComponents/TotalPoints';
-import BusImg from '../BusPic';
+import BooksImg from '../Books';
 
 //----COMPONENT STYLING----//
 
@@ -175,9 +175,9 @@ else if(alldata === 50){
 
      
 
-  <h1>One Day Buss Pass</h1>
-  <BusImg />
-<h2>Redeem 35 Points For <br></br> One Day Buss Pass?</h2>
+  <h1>Random E-Book</h1>
+  <BooksImg />
+<h2>Redeem 35 Points For <br></br>1 Book</h2>
 {/* <GreenButton routeTo="/article1" text="Yeah!"/> */}
 
 <ButtonCont1 id="testbutton" onMouseOver={getData} onClick={()=>router.push(routeTo)}>       

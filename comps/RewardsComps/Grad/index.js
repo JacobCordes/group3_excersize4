@@ -27,7 +27,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 `
-  const CineplexImg = ({
+  const GradImg = ({
 
   }) =>{
   
@@ -39,4 +39,4 @@ align-items:center;
     
   }
   
-  export default CineplexImg
+  export default GradImg

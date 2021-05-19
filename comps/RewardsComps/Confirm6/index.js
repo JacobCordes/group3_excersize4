@@ -175,7 +175,7 @@ else if(alldata === 50){
 
      
 
-  <h1>One Day Buss Pass</h1>
+  <h1>BIC Lead Pencils</h1>
   <PencilsImg />
 <h2>Redeem 35 Points For <br></br> School Supplies?</h2>
 {/* <GreenButton routeTo="/article1" text="Yeah!"/> */}
