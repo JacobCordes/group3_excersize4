@@ -58,7 +58,7 @@ export default function Home() {
 <br></br>
 
 <h3>Every piece of trash that is taken away to be recycled or deposited in a landfill means there is one less dangerous item for birds, turtles or whales to swallow. Cleanups also restore these creatures' habitats.</h3>
-<br></br><BackButton routeTo="/hellouser" text="Great!"></BackButton>
+<br></br><BackButton routeTo="/rewards" text="Check Rewards"></BackButton>
       </div></div>
 
 
