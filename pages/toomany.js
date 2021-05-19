@@ -14,6 +14,7 @@ import NavBar from '../comps/NavBar/Nav';
 import FortniteImg from '../comps/RewardsComps/RewardImagesComp/fortnite';
 import SmallLogo from '../comps/SmallLogo';
 import BackButton from '../comps/TylersComps/BackButton1';
+import SadEarth from '../comps/SadEarthPic';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -108,9 +109,10 @@ export default function Rewards() {
 
 
     <div className="mid"><div>
-        <br></br>     <br></br>      <br></br> <br></br>     <br></br>      <br></br>
-<h1>Sorry! <br></br>You have exceeded the trash input limit</h1>
-
+        <br></br>     <br></br>      <br></br> 
+<h1>Sorry! <br></br>You have exceeded the trash input limit</h1><br></br>
+<SadEarth />
+<br></br>
 <BackButton text="Try Again" routeTo="/trashlog" />
       </div></div>
 

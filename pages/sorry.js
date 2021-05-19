@@ -14,6 +14,7 @@ import NavBar from '../comps/NavBar/Nav';
 import FortniteImg from '../comps/RewardsComps/RewardImagesComp/fortnite';
 import SmallLogo from '../comps/SmallLogo';
 import BackButton from '../comps/TylersComps/BackButton1';
+import SadEarth from '../comps/SadEarthPic';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -79,7 +80,7 @@ h1{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:812px;
+  grid-auto-rows:1000px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -111,7 +112,7 @@ export default function Rewards() {
         <br></br>     <br></br>      <br></br> <br></br>     <br></br>      <br></br>
 <h1>Sorry! <br></br>You do not have enough points</h1>
 
-<BackButton text="Go Back" routeto="/" />
+<BackButton text="Go Back" routeTo="/rewards" />
       </div></div>
 
 

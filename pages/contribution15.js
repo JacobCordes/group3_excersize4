@@ -42,7 +42,7 @@ h1{
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1350px;
+  grid-auto-rows:1000px;
   text-align:center;
   font-family:Martel Sans;
   color:white;

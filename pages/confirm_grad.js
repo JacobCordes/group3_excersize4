@@ -80,7 +80,7 @@ h1{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:700px;
+  grid-auto-rows:1150px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -113,17 +113,17 @@ export default function Rewards() {
       <h1 className="PageHead">Rewards</h1>
       </div></div>
 
-    <div className="left"><div>
+   
+    <div className="mid"><div>
     <h1>Tap for Stats</h1>
       <Pointer />
       <TotalPoints />
 
-      </div></div>
+     
 
-    <div className="mid"><div>
   <h1>Credit For Tuition</h1>
 <GradImg/>
-<h2>Redeem 50 Points For <br></br>5$ Credit For Tuition?</h2>
+<h2>Redeem 35 Points For <br></br>5$ Credit For Tuition?</h2>
 <GreenButton routeTo="/article1" text="Yeah!"/>
       </div></div>
 
