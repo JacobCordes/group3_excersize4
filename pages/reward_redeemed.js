@@ -79,7 +79,7 @@ h1{
 .mid{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:812px;
+  grid-auto-rows:1025px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -113,7 +113,7 @@ export default function Rewards() {
 
 <h3>We will email you with further details regarding your redemption</h3><br></br>
 
-<BackButton text="Home" routeto="/hellouser" />
+<BackButton text="Back to Home" routeTo="/hellouser" />
       </div></div>
 
 

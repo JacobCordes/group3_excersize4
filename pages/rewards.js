@@ -14,6 +14,7 @@ import SquareImages from '../comps/RewardsComps/HelpYourselfComp';
 import NavBar from '../comps/NavBar/Nav';
 import SmallLogo from '../comps/SmallLogo';
 import TotalPoints from '../comps/TrashLogComponents/TotalPoints';
+import Pointer from '../comps/Pointer';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -59,7 +60,7 @@ h1{
 .left{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:275px;
+  grid-auto-rows:525px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -112,7 +113,9 @@ export default function Rewards() {
       <h1 className="PageHead">Rewards</h1>
       </div></div>
 
-    <div className="left"><div><br></br>
+    <div className="left"><div>
+    <h1>Tap For Stats</h1>
+    <Pointer />
 <TotalPoints />
 
       </div></div>

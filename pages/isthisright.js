@@ -70,7 +70,7 @@ export default function Home() {
   
 
     <div className="top"><div>
-<IsThisRight1 routeTo="/article1" text="Yeah!"></IsThisRight1>
+<IsThisRight1 routeTo="/contribution0" text="Yeah!"></IsThisRight1>
       </div></div>
 
 
