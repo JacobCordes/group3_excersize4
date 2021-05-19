@@ -20,6 +20,7 @@ import SmallLogo from '../comps/SmallLogo';
 import IsThisRight1 from '../comps/IsThisRight';
 import Pointer from '../comps/Pointer';
 import BackButton from '../comps/TylersComps/BackButton1';
+import EarthPic from '../comps/EarthPic';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -72,10 +73,10 @@ export default function Home() {
 
     <div className="top"><div>
 <h1>Fantastic! <br></br>You have collected 25 or more pieces of trash!</h1>
+<EarthPic />
 <br></br>
 
-
-<h3>This means that ...</h3>
+<h3>Improper disposal of trash is a potential breeding ground for bacteria and diseases. It spreads diseases, viruses, and parasites through direct and indirect contact. Through proper trash disposal, you are reducing the spread of dieseases.</h3><br></br>
 <BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
       </div></div>
 

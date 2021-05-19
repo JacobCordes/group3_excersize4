@@ -20,6 +20,7 @@ import SmallLogo from '../comps/SmallLogo';
 import IsThisRight1 from '../comps/IsThisRight';
 import Pointer from '../comps/Pointer';
 import BackButton from '../comps/TylersComps/BackButton1';
+import EarthPic from '../comps/EarthPic';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -72,11 +73,11 @@ export default function Home() {
 
     <div className="top"><div>
 <h1>Cool! <br></br> You have collected 15 or more pieces of trash!</h1>
+<EarthPic />
 <br></br>
 
-
-<h3>This means that ...</h3>
-<BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
+<h3>Litter is a safety hazard to children as they are more likely to pick up litter out of curiousity and possibly put it in their mouth. By keeping litter of the streets, you are helping to reduce this risk.</h3>
+<br></br><BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
       </div></div>
 
 

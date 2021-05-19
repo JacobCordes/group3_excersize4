@@ -20,6 +20,7 @@ import SmallLogo from '../comps/SmallLogo';
 import IsThisRight1 from '../comps/IsThisRight';
 import Pointer from '../comps/Pointer';
 import BackButton from '../comps/TylersComps/BackButton1';
+import EarthPic from '../comps/EarthPic';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -72,10 +73,11 @@ export default function Home() {
 
     <div className="top"><div>
 <h1>Awesome! <br></br> You have collected 10 or more pieces of trash!</h1>
+
+
+<EarthPic />
 <br></br>
-
-
-<h3>This means that ...</h3>
+<h3>Less brings benefit to animals and humans. Not only is litter unsightly and capable of ruining our experience in nature, it also poses danger to animals that may ingest it.</h3><br></br>
 <BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
       </div></div>
 

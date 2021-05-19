@@ -20,6 +20,7 @@ import SmallLogo from '../comps/SmallLogo';
 import IsThisRight1 from '../comps/IsThisRight';
 import Pointer from '../comps/Pointer';
 import BackButton from '../comps/TylersComps/BackButton1';
+import SadEarth from '../comps/SadEarthPic';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -72,6 +73,7 @@ export default function Home() {
 
     <div className="top"><div>
 <h1>Oh No!<br></br> You haven't collected anything</h1>
+<SadEarth />
 <br></br>
 
 

@@ -20,6 +20,7 @@ import SmallLogo from '../comps/SmallLogo';
 import IsThisRight1 from '../comps/IsThisRight';
 import Pointer from '../comps/Pointer';
 import BackButton from '../comps/TylersComps/BackButton1';
+import EarthPic from '../comps/EarthPic';
 // import  from '../comps/TrashLogComponents/Discussion';
 
 
@@ -72,10 +73,10 @@ export default function Home() {
 
     <div className="top"><div>
 <h1>Incredible! <br></br> You have Maxed out the trash log with 50 collections!</h1>
+<EarthPic />
 <br></br>
 
-
-<h3>This means that ...</h3>
+<h3>Litter often makes its way to storm drains, where it can cause serious clogs that lead to flooding. Litter that does pass through the storm drain flows directly into nearby rivers and streams, polluting Rhode Island’s beautiful waterways.</h3><br></br>
 <BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
       </div></div>
 

@@ -42,7 +42,7 @@ h1{
 .top{
   display:grid;
   grid-template-columns: 1fr;
-  grid-auto-rows:1350px;
+  grid-auto-rows:1000px;
   text-align:center;
   font-family:Martel Sans;
   color:white;
@@ -78,8 +78,8 @@ export default function Home() {
 <EarthPic />
 <br></br>
 
-<h3>Congratulations! <br></br>Through your contributions you were able to contribute</h3>
-<BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
+<h3>Clean parks, streets and beaches are safer for our children, from their feet to their hands. Garbage is not only dirty it can be sharp and dangerous,</h3><br></br>
+<br></br><BackButton routeTo="/rewards" text="Check Rewards!"></BackButton>
       </div></div>
 
 
